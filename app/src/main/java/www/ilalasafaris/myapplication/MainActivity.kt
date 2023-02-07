@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
             karoo.setOnClickListener { startActivity(KarooStart::class.java) }
             fynbos.setOnClickListener { startActivity(FynbosStart::class.java) }
             forest.setOnClickListener { startActivity(ForestStart::class.java) }
+            thicket.setOnClickListener { startActivity(ThicketStart::class.java) }
         }
     }
     private fun startActivity(activityClass: Class<*>) {

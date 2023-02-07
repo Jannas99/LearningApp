@@ -128,4 +128,16 @@ interface DaoBirds {
     @Query("DELETE FROM `Forest`")
     suspend fun deleteAll_Forest()
 
+    //Thicket
+    @Insert
+    suspend fun insert_Thicket(savedBirdlist: ThicketStart.Data)
+    @Delete
+    suspend fun delete_Thicket(savedBirdlist: ThicketStart.Data)
+    @Query("SELECT * FROM `Thicket` where id = :id")
+    fun fetchBirdById_Thicket(id:Int):Flow<ThicketStart.Data>
+    @Query("SELECT * FROM 'Thicket'")
+    fun fetchAll_Thicket():Flow<List<ThicketStart.Data>>
+    @Query("DELETE FROM `Thicket`")
+    suspend fun deleteAll_Thicket()
+
 }

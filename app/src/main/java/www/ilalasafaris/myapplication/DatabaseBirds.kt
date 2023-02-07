@@ -16,6 +16,7 @@ import androidx.room.RoomDatabase
     KarooStart.Data::class,
     FynbosStart.Data::class,
     ForestStart.Data::class,
+    ThicketStart.Data::class,
     DesertStart.Data::class
 
 ], version = 22)
