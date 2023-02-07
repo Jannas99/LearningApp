@@ -116,4 +116,16 @@ interface DaoBirds {
     @Query("DELETE FROM `Fynbos`")
     suspend fun deleteAll_Fynbos()
 
+    //Forest
+    @Insert
+    suspend fun insert_Forest(savedBirdlist: ForestStart.Data)
+    @Delete
+    suspend fun delete_Forest(savedBirdlist: ForestStart.Data)
+    @Query("SELECT * FROM `Forest` where id = :id")
+    fun fetchBirdById_Forest(id:Int):Flow<ForestStart.Data>
+    @Query("SELECT * FROM 'Forest'")
+    fun fetchAll_Forest():Flow<List<ForestStart.Data>>
+    @Query("DELETE FROM `Forest`")
+    suspend fun deleteAll_Forest()
+
 }

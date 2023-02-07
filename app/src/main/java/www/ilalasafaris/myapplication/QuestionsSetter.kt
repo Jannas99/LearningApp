@@ -322,6 +322,28 @@ import kotlin.collections.ArrayList
             mDisplayToast(mToast)
         }
     }
+
+    fun addRecordForest(birdsDao:DaoBirds) {
+        val question: Birds = mlist[mCurrentposition - 1]
+        val idbird = question.idbird
+        val name = question.name
+        val sname = question.sname
+        val picture1 = question.picture1
+        val picture2 = question.picture2
+        val picture3 = question.picture3
+        val picture4 = question.picture4
+        val picture5 = question.picture5
+        val sounds = question.sound
+        lifecycleScope.launch {
+            birdsDao.insert_Forest(ForestStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
+                picture2 = picture2,
+                picture3 = picture3,
+                picture4 = picture4,
+                picture5 = picture5,  sound = sounds))
+            val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
+            mDisplayToast(mToast)
+        }
+    }
     }
 
 

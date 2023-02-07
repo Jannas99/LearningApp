@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Test
-
         // Todo This code stops the "W/System: A resource failed to call close. " error. It seems to be the "val birdDao that does not close properly"
         StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder(StrictMode.getVmPolicy()).detectLeakedClosableObjects().build())
 
@@ -66,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             arid.setOnClickListener { startActivity(DesertStart::class.java) }
             karoo.setOnClickListener { startActivity(KarooStart::class.java) }
             fynbos.setOnClickListener { startActivity(FynbosStart::class.java) }
+            forest.setOnClickListener { startActivity(ForestStart::class.java) }
         }
     }
     private fun startActivity(activityClass: Class<*>) {
@@ -85,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-    private fun yourOwnList(birdList: ArrayList<MainActivity.Data>) {
+    private fun yourOwnList(birdList: ArrayList<Data>) {
         binding.savedbtn?.setOnClickListener {
             if (birdList.isNotEmpty()) {
 
