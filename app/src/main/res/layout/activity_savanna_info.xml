@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavannaInfo">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Savanna" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The savanna biome is the largest of all the biomes, characterised by a grassy ground covering and a discontinuous but prominent woody layer." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_savannabiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Shaped by the amount of annual summer rainfall it receives, which ranges from 200 to 1000mm per year. This limited amount of rainfall allows grasses to dominate the woody layer and allows for seasonal fires to occur which stimulate the growth of grasses and suppress the growth of trees even more." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Savanna Types"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Various types of savanna are recognised based primarily on the dominate tree genera that occupies the region, e.g., acacia savanna, broad-leaved woodlands, and palm veld" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Acacia Savanna is dominated by ‘Senegalia’ and ‘Vachellia’ trees with a well-developed grassy layer. Bird species associated with this region are Tawny Eagle, Kori Bustard, Lilac-breasted Roller, Burnt-necked Eremomela, Crimson-breasted Shrike, Blue Waxbill, Marico Sunbird and Magpie Shrike" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Broad-leaved Woodland are dominated by Combretum, Mopane or Miombo and include areas such as the Waterberg, which is a Combretum woodland. Mopane woodlands are well represented in the northern part of Kruger National Park but are not birding hotspots, however Arno’s Chat and a Three-banded Courser are confined to these areas." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Palm Veld are very localized in South Africa and found mostly in northern Kwa-Zulu Natal. However a few birds like African Palm Swift, Rufous-tailed and Palm Thrush, Palm-nut Vulture, Red-necked, Dickinson’s and Grey Falcons are very reliant on palms." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Veld Types"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Savanna biome has been broken into East and West. The difference between the 2 can be broadly explained by ‘Veld Type’" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="‘Veld types’ refer to the hight of the woody upper layer, which intern is determined by the rain, creating 3 prominent veld types namely ‘shrubveld’, ‘bushveld’ and ‘woodland’. Shrubveld is bushy with a woody layer close to the ground. Woodlands is denser with taller trees and bushveld has an intermediate woody upper layer. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Eastern Savanna tends to get more rain resulting in more woodlands. This area covers the central bushveld, lowveld regions and mopane savanna. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="170dp"
+                android:text="The Western Savanna covers the dryer Kalahari Bushveld region consisting more of bushveld and scrubveld" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tosavannaeastlist"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/specieseast"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tosavannawestlist"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/specieswest"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/specieseast"
+        style="@style/floatingbuttons1"
+        android:text="Species East"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tosavannawestlist"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/specieswest"
+        style="@style/floatingbuttons1"
+        android:text="Species West"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tosavannaeastlist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

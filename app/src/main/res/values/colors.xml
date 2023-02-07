@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#808f75</color>
+    <color name="purple_700">#808f75</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ilala">#808f75</color>
+    <color name="ilala2">#808f75</color>
+
+    <color name="Beidge1">#dcd4c8</color>
+    <color name="Beidge2">#b9ab98</color>
+    <color name="Beidge3">#dddacc</color>
+
+    <color name="Green1">#8b8d72</color>
+    <color name="Green2">#a9b6a4</color>
+    <color name="Green3">#7d9174</color>
+
+    <color name="Brown1">#c4ddd5</color>
+    <color name="Brown2">#D0DACC</color>
+    <color name="Brown3">#6d7b81</color>
+
+    <color name="Font">#6d6d60</color>
+    <color name="ilalalight">#a9b6a4</color>
+    <color name="ilaladark">#808f75</color>
+
+    <color name="ilaladarkest">#566e4f</color>
+
+
+
+
+
+
+</resources>

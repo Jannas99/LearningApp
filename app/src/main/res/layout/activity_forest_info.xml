@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForestInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Forest" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Forests are generally small and fragmented, covering less than 0.3% of the country's surface." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_forestbiomemap" />
+
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Characterised by their continuous canopy of mostly evergreen trees, below which shelters a multi-layered understory of smaller trees and shrubs. They have all year rainfall averaging 500mm to 2000mm per year, and are restricted to frost-free areas" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Forests can be divided into 2 broad categories, namely moist and dry forests. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Moist forest "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Moist forests is characterized by a closed canopy with lush, evergreen to semi-deciduous vegetation and annual rainfall of more then 1000mm." />
+
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="They are found at elevations ranging from sea level up to 2000 meters and are typically divided into three subtypes: lowland forests found near the coast, mist-belt forests from medium to high altitude  and afromontane forests, which are found at higher elevations." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Ongoye in KwaZulu Natal and Woodbush in Limpopo are examples of moist forests that are particularly important in South Africa." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Moist forests are known for their rich bird populations, including species such as the Eastern Napped Bronze Pigeon, Green Barbet, Bush Blackcap, White-starred Robin, Chirinda Apalis, Spotted Ground Thrush, Orange Ground Thrush, and Swynnerton's Robin. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Dry Forest "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:text="These forests generally receive less rain and tend to be dry, semi-deciduous vegetation."/>
+            <TextView
+                style="@style/textinfo"
+                android:text="The costal dune forest located on the coastal plains of KwaZulu Natal is a dry forest which grows in relatively deep sandy soil"/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="These forests are home to a variety of bird species, including the Crested Guineafowl, African Barred Owlet, African Broadbill, Eastern Nicator, Woodwards' Batis, Plain-backed Sunbird, and Neeraard's Sunbird. "/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

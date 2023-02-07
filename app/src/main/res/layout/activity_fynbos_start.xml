@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/zzz_corebackground"
+    tools:context=".FynbosStart">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Habitats includes mountain and coastal fynbos, renosterveld and strandveld."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_fynbosbiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:text="Seven lists with a total of 209 species" />
+            <TextView
+                style="@style/birdpictureinfo"
+                android:textAlignment="center"
+                android:layout_marginTop="0dp"
+                android:text="(press and hold button to see species in list)" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    style="@style/CoreButton1"
+                    android:text="1/7" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    style="@style/CoreButton1"
+                    android:text="2/7" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    style="@style/CoreButton1"
+                    android:text="3/7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn4"
+                    style="@style/CoreButton1"
+                    android:text="4/7" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="8dp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    style="@style/CoreButton1"
+                    android:text="5/7" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    style="@style/CoreButton1"
+                    android:text="6/7" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn7"
+                    style="@style/CoreButton1"
+                    android:text="7/7" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAll"
+                style="@style/CoreButton1"
+                android:layout_gravity="center"
+                android:textColor="@color/Font"
+                android:layout_marginBottom="20dp"
+                android:text="All Species" />
+
+
+
+
+            <Button
+                android:id="@+id/btnSearch"
+                style="@style/CoreButton2"
+                android:backgroundTint="@color/ilalalight"
+                android:text="Create List"/>
+
+            <Button
+                android:id="@+id/btnSave"
+                style="@style/CoreButton2"
+                android:text="Saved List" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

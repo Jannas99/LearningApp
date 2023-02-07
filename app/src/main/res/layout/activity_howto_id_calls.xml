@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowtoIdCalls">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backtotop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/zzz_backtotoparrow"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/index"
+            style="@style/headingforinfo"
+            android:background="@color/ilalalight"
+            android:text="Index" />
+
+        <TextView
+            android:id="@+id/introindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="1. Introduction"
+            />
+        <TextView
+            android:id="@+id/pitchindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="2. Pitch"
+            />
+        <TextView
+            android:id="@+id/tempoindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="3. Tempo"
+            />
+        <TextView
+            android:id="@+id/qualityindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="4. Quality"
+            />
+        <TextView
+            android:id="@+id/mimicaryindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="5. Mimicary"
+            />
+        <TextView
+            android:id="@+id/alarmindex"
+            android:layout_marginTop="10dp"
+            style="@style/indexinfo"
+            android:text="6. Alarm Calls"
+            />
+
+        <TextView
+            android:id="@+id/introduction"
+            style="@style/headingforinfo"
+            android:layout_marginTop="10dp"
+            android:text="Introduction"
+            android:background="@color/ilalalight"
+            />
+
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Birds are the musical instruments, bands, and orchestras of nature, and in many ways are no different from the music we listen to. "
+            />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="If you can identify the ‘’Mama Mia’’ by ABBA, or recognize that the movie you are watching has a score composed by Hans Zimmer, then you can also identify bird calls."
+            />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Your ability to listen and remember sounds is much more powerful and effective than you might think. The average person might not be able to identify Bon Jovi if he walked into the room, but when ‘’Summer of 69’’ is playing, every person recognizes it and starts singing as if it's their last day on earth."
+            />
+        <TextView
+            style="@style/textinfo"
+            android:text="You might struggle at first, but don't worry. Stop, relax, and listen. Don't worry about trying to identify the species right away. Instead, focus on differentiating between the calls of different species. Once you have isolated a particular voice, you can consider, pitch, tempo, quality, mimicry and alarm calls."
+            />
+
+        <TextView
+            android:id="@+id/pitch"
+            style="@style/headingforinfo"
+            android:text="Pitch"
+            android:background="@color/ilalalight"
+            />
+        <TextView
+            style="@style/textinfo"
+            android:text="Pitch is simply our perception of the frequency (or wavelength) of a sound, which we describe as high or low"/>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="In the 3 calls below you can clearly hear the diffrence between a high and a low pitched call"/>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/waxbillplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_testpitchcall"
+                android:visibility="visible"
+                />
+            <ImageButton
+                android:id="@+id/waxbillstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Very High Pitch - Blue Waxbill"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+
+            <ImageButton
+                android:id="@+id/brownscrubrobinplay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:visibility="visible"/>
+            <ImageButton
+                android:id="@+id/brownscrubrobinstop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="High Pitch - Brown Scrub Robin"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+
+            <ImageButton
+                android:id="@+id/piedcrowplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:visibility="visible"/>
+            <ImageButton
+                android:id="@+id/piedcrowstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Low Pitch - Pied Crow"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="Changes in pitch are very useful to consider. It may take some practice but paying attention to changing pitch can greatly improve your ability to distinguish between different species."/>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+
+            android:text="The Black-crowned Tchagara’s call varies in pitch, but generally stays on the same level. "/>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:layout_marginTop="0dp"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/blacktchplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+
+            <ImageButton
+                android:id="@+id/blacktchstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Black Crowned Tchagara"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="The Brown-crowned Tchagara starts its call with a high pitch and gradually lowers it."/>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:layout_marginTop="0dp"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+
+            <ImageButton
+                android:id="@+id/browntchplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/browntchstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Brown Crowned Tchagara"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="While the general pitch of a bird's call can help narrow down your options, it is usually not sufficient for a definitive identification. Many bird calls are complex and cover a wide range of frequencies, and there can be significant variation in pitch even within a single species. "/>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="To accurately identify a bird based on its call, it is helpful to consider other characteristics in addition to pitch."/>
+
+        <TextView
+            android:id="@+id/tempo"
+        style="@style/headingforinfo"
+        android:text="Tempo"
+        android:background="@color/ilalalight" />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Tempo refers to the pace or speed of a bird's call, which is measured in the number of notes or phrases per second. "/>
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="Tempo can be described as ‘‘fast’’ or ‘‘slow’’ and can be either ‘‘steady’’ or ‘’variable’’ It can also be helpful to describe them as being ‘’rushed’’ or ‘’relaxed’’."/>
+
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Fast Tempo - The African Firefinch has a fast tempo resulting in a ‘’trilling’’ sounds."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:layout_marginTop="0dp"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/africanfirefinchplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/africanfirefinchstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="African Firefinch"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Slow Tempo - A Pearl-spotted Owlet has a slower, constant, steady tempo."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/pearlspottedowletplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/pearlspottedowletstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Pearl-spotted Owlet "/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Variable Tempo – A Capped Wheatear has a varying tempo, constantly changing create a ‘‘jumbled’’ or ‘’chatty” call"/>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/cappedwheatearplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/cappedwheatearstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Capped Wheatear"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Rushed call – The Collard Sunbird's song has a fast tempo, with short phrases delivered in a rapid manner, giving the impression of a 'rushed' call."/>
+
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/collardsunbirdplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/collardsunbirdstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Collard Sunbird"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Relaxed Tempo - The Orange-breasted Bushshrike's song has a slower tempo, with longer phrases that sound more relaxed."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/orangebreastedbushshrikeplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"
+                android:layout_marginStart="20dp"/>
+            <ImageButton
+                android:id="@+id/orangebreastedbushshrikestop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                android:text="Orange-breasted Bushshrike"/>
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Tempo, like pitch, is usually not a definitive characteristic for identifying birds, but paying attention to differences in tempo can be helpful. "/>
+
+
+        <TextView
+            android:id="@+id/quality"
+            style="@style/headingforinfo"
+            android:text="Quality"
+            android:background="@color/ilalalight" />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Imagine a violin, piano, and flute playing the same note with the same pitch and tempo. You would still be able to determine which sound belongs to which instrument. Musicians call this 'timbre' and refers to the unique individual sound of each instrument. "/>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="The creative words we use to describe bird songs often convey information about pitch and tempo, which can be helpful for most people in understanding the characteristics of a call. "/>
+
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="@string/sound_quality_or_the_impression_of_the_song_is_a_subjective_that_differs_from_person_to_person"/>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="The quality or impression of the Grey-tit’s call can be described as ‘’buzzy’’ and ‘’rusty’’"/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/greytitplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/greytitstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grey Tit"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="The Brown Scrub Robin’s call could be described as ‘’full’’ and ‘’melodic’’"/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/brownscrubrobinplay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/brownscrubrobinstop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brown Scrub Robin"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="Because quality is subjective it allows for the use of vague and poetic words like ‘‘liquid’’, ‘’metallic’’, ‘‘sweet’’, ‘’mechanical’’, and ‘’fluting’’ to convey the character of a bird's call."/>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="A Southern Boubou is a good example of a ‘’metallic’’ sounds."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/southernboubouplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/southernbouboustop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Southern Boubou"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Arrow-marked Babblers has a very ‘’witchy’’ sound."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/arrowmarkbabblerplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/arrowmarkbabblerstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrow-marked Babbler"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Certain pitch ranges can be described as whistles, with lower-pitched whistles typically being described as ‘‘rich’’ or ‘‘full’’ and higher-pitched whistles as ‘‘thin’’ or ‘’squeaky’’. Similarly, descriptive words like ‘‘relaxed’’ and ‘‘lethargic’’ imply a slower tempo, while a ‘’buzz’’ is like a trill, but at a faster tempo"/>
+        <TextView
+            style="@style/textinfo"
+            android:text="The creative words we use to describe bird songs often convey information about pitch and tempo, which can be helpful for most people in understanding the characteristics of the call. "/>
+        <TextView
+            style="@style/textinfo"
+            android:text="In summary, the term ’quality’ (timbre) refers to how you creatively describe or perceive a bird call in terms of pitch and tempo."/>
+
+        <TextView
+            android:id="@+id/mimicary"
+            style="@style/headingforinfo"
+            android:text="Mimicary"
+            android:background="@color/ilalalight" />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Mimicry is the ability of birds to imitate the calls of other species and can create lots of confusion when trying to identify a bird’s call"/>
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="Examples of birds that mimic include the Fork-tailed Drongo, Cape Robin, Chorister Robin, Sabota Lark, Mocking Cliff-chat and many more. "/>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="The two calls below are of a Black-headed Oriole and a Brown-hooded Kingfisher. "/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/blackheadedoriolplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/blackheadedoriolstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black-headed Oriole"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+            <ImageButton
+                android:id="@+id/brownhoodedkingfisherplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/brownhoodedkingfisherstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brown-hooded Kingfisher"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="This call is of a chorister Robin that is mimicking a Brown-hooded Kingfisher and a Black Headed Oriole"/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/choristerrobinplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/choristerrobinstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chorister Robin "
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Normally when a bird is mimicking, they do not complete the entire call and instead jumps from one mimicked call to another."/>
+
+        <TextView
+            style="@style/textinfo"
+            android:text="As your knowledge of bird calls improves, you will be able to recognize when a bird is attempting to deceive you through mimicry. However even professionals can get it wrong, so don’t feel defeated if you get fooled. "/>
+
+        <TextView
+            android:id="@+id/alarm"
+            style="@style/headingforinfo"
+            android:text="Alarm Calls"
+            android:background="@color/ilalalight"
+            />
+
+        <TextView
+            style="@style/textinfo"
+            android:text="Listening to alarm calls can give you valuable information about the environment around you. Birds can reveal the presence of many other animals, such as snakes, owls, eagles, leopards, or any other perceived threats."
+            />
+        <TextView
+            style="@style/textinfo"
+            android:text="It is very important to note that alarm calls are by nature designed to immediately grab your attention. If a call sounds harsh, loud, and scratchy or irritating it is likely an alarm call."
+            />
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="Below are two examples, however there are many more as most birds have some sort of alarm call."
+            />
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/rattlingcisticolaplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/rattlingcisticolastop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rattling Cisticola"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+            <View
+                android:layout_width="18dp"
+                android:layout_height="0dp"/>
+            <ImageButton
+                android:id="@+id/darkcappedbulbulplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/darkcappedbulbulstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark-capped Bulbul"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/blackbackpuffbackplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/blackbackpuffbackstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black-back Puffback"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:id="@+id/helmetedguineafowlplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/helmetedguineafowlstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Helmeted Guineafowl"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <TextView
+            style="@style/textinfo"
+            android:text="Birds can also have different alarm calls to indicate different threats. They are very difficult to distinguish and takes some time master. "
+            />
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="10dp"
+            android:text="A Grey Go-Away-Bird is a good example of this."
+            />
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="This is the typical call given when seeing a threat on the ground"/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/greygoawaybirdgroundplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/greygoawaybirdgroundstop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grey Go-away-bird - Ground threat"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textexmple"
+            android:background="@color/Brown2"
+            android:text="This is a very characteristic call made when a bird of prey is flying very low or taking off from a tree."/>
+        <LinearLayout
+            style="@style/linearlayoutinfo"
+            android:background="@color/Brown2"
+            android:gravity="center_vertical">
+            <ImageButton
+                android:id="@+id/greygoawaybirdskyplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/zzz_testpitchcall"
+                android:backgroundTint="@color/ilalalight"/>
+            <ImageButton
+                android:id="@+id/greygoawaybirdskystop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/ilalalight"
+                android:src="@drawable/zzz_stopwhite"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grey Go-away-bird - Aerial threat"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/textinfo"
+            android:layout_marginBottom="20dp"
+            android:text="When you hear a Grey Go-Away-Bird making this call look around and see if you can spot the Raptor."/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

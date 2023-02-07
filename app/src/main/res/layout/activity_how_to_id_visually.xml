@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HowToIdVisually">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backtotop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/zzz_backtotoparrow"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/index"
+                style="@style/headingforinfo"
+                android:layout_marginTop="0dp"
+                android:background="@color/ilalalight"
+                android:text="Index" />
+            <TextView
+                android:id="@+id/introindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="1. Introduction" />
+            <TextView
+                android:id="@+id/shapeandsizeindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="2. Shape and Size" />
+            <TextView
+                android:id="@+id/billtypesindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="3. Bill types" />
+            <TextView
+                android:id="@+id/legsindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="4. Legs" />
+            <TextView
+                android:id="@+id/plumageindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="5. Colour and Patterns" />
+            <TextView
+                android:id="@+id/habitatindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="6. Habitat" />
+            <TextView
+                android:id="@+id/habitsindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="7. Habits" />
+            <TextView
+                android:id="@+id/flightpatternsindex"
+                style="@style/indexinfo"
+                android:layout_marginTop="10dp"
+                android:text="8. Flight Patterns" />
+            <TextView
+                android:id="@+id/intro"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Introduction" />
+            <TextView
+                style="@style/textinfo"
+                android:text="A problem commonly seen among beginners is when they see a bird, they immediately take the guide to identify it based mainly on the colours of the bird." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Using this approach will lead to frustration due to the large number of birds that have similar colours and shapes." />
+            <TextView
+                style="@style/textinfo"
+                android:text="To get the most accurate identification, it is best to observe the bird before it flies away. Pay attention to details such as size, colour, behaviour, and any other distinctive features. Then, use this information to refer to a bird guide for identification." />
+            <TextView
+                style="@style/textinfo"
+                android:text="As with any skill, it may take time and practice to become proficient at identifying birds. While it is possible that you may make mistakes along the way, even experts make mistakes at times. However, with patience and persistence, you will improve your ability to identify birds." />
+            <TextView
+                style="@style/textinfo"
+                android:text="To aid in your efforts to identify birds, consider following these guidelines." />
+            <TextView
+                android:id="@+id/shapeandsize"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Shape and Size" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Size"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="When trying to identify a bird based on its size, it can be helpful to compare it to other birds that you are familiar with." />
+            <TextView
+                style="@style/textinfo"
+                android:text="You might ask yourself if the bird is bigger or smaller than a pigeon. " />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="If the bird is in the company of another known bird, the size difference can be used as a reference." />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_sizecomparrison" />
+            <TextView
+                style="@style/textinfo"
+                android:text="However, when trying to identify a bird flying high in the sky, be mindful of the fact that there is no reference point for comparison, so size may not be the most reliable characteristic to use." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Shape"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="Birds belonging to the same family often have similar shapes, making it easier to group a bird into a specific category or family.
+Herons all tend to have a similar shape regardless of their size.
+" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_shapecomparrison" />
+            <TextView
+                android:id="@+id/billtypes"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Bills" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Bill Types"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Each bill has evolved specifically to help the bird gather and consume food, reflecting their adaptations. This makes the shape and size of a bird's bill an important characteristic for identification, as it can provide a lot of information about the bird's diet and feeding habits." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Piscivore"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds generally have long, slender, pointed beaks for hunting fish, frogs, crustaceans, and other prey in the water. They typically grab their prey between their upper and lower beak but may also use their sharp beak to spear it." />
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_waders" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Herons, Cranes, Egrets, Storks." />
+
+            </LinearLayout>
+            <TextView
+                style="@style/textinfo"
+                android:text="Filter-feeders"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have wide bills for scooping and straining water, using lamellae (small, comb-like structures inside their bill) to filter out small animals, insects, and plants." />
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_filterfeeders" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Ducks, Geese, and Flamingos" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Granivorous birds"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have heavy, robust, conical beaks for cracking seeds, as their diet consists mostly of seeds and grains. Many of the songbirds that visit backyard bird feeders belong to this group" />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_seed" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples including Sparrows, Waxbills, Canaries, Weavers." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Carnivorous birds"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have large, strong, hooked beaks adapted for tearing meat, and their diet includes small to medium rodents/mammals, reptiles, fish, amphibians, other birds, large insects, and carrion. " />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_billraptor" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Hawks, Falcons, Harriers, Owls, Vultures, Buzzards, Ospreys, and Kites." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Insectivorous"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have short, straight, thin beaks for snatching insects from the ground. Some insectivorous birds catch insects while flying in the air with their mouths open, and have shorter, wider, flatter beaks." />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_insect" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Warblers, Robins, Swallows, Bee-eaters and Flycatchers." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Probing beaks"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have extremely long, slender beaks that they use as probes. The bill is packed with sensitive receptors which helps to detect worms and larvae " />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_probing" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include African hoopoe, Ibis, Sandpiper, Wood-hoopoes" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Probing beaks"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds usually have short, thick bills, with some being curved or somewhat curved. It's important to note that these birds also eat seeds and nuts." />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_parrot" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Barbets, some Turacos, Parrots, Go-away-birds, and Mousebirds." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Nectarivores"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="These birds have long, slender bills that can slide deep into flowers using their long tongues to reach inside and suck up the nectar." />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/zzz_nectar" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Examples include Sunbirds and Sugarbirds." />
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Bill Colour"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp"
+                android:text="The colour of the bill can also be of great help to determine the species. In regards with kingfishers this is very applicable. " />
+
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_brownhoodedkingfisher" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Brown-hooded Kingfisher has a red bill with a black tip" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_greyheadedkingfisher" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Grey-headed Kingfisher's entire bill is reddish" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_stripedkingfisher" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Striped Kingfisher has a redish lower mandible and a greyish upper mandible." />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_woodlandskingfisher" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Woodlands Kingfisher has a back lower mandible and a red upper mandible." />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_halfcollardkingfisher" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Half-collared Kingfisher's entire bill is black" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/legs"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Legs" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The legs of birds can provide valuable clues about their habits and behaviours and can be useful in identifying different species.Try to observe the length, colour, arrangement of toes, and whether the legs are feathered." />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="Most egret’s species have very distinctive coloured legs, which is very useful for identification." />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_cattleegret" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Western Cattle Egret with yellowish legs" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_littleegret" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Little Egret with black legs and yellow feet" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_greategret" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Great Egret with all black legs" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="Looking at the legs of eagles can also be useful as True eagles, like Wahlberg’s, Tawny and Martial eagles have feathered legs that extend all the way down to the feet, compared to other eagles like Bataleur and Brown-snake Eagles which have feathers only halfway down the legs. " />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_walhbergseagle" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Wahlberg’s eagle has feathered legs all the way down." />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_brownsnakeeagle" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Brown Snake Eagle only has feathers halfway down the legs." />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/plumage"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Colour and Patterns" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Colour"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Colouration can be a valuable tool for identifying birds, but it can also be a source of confusion. The appearance of a bird's feathers in the field can be affected by the light, angle, and the distance from which it is viewed. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="In addition, a bird's plumage may vary based on its sex, age, and the time of year. Unless the bird has a unique coloration like that of a Crimson-breasted Shrike, it is likely that there are several species with similar plumage." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="When looking at Colouration, try to determine the overall colour of the bird otherwise, if there are more then one colour, try to determine where the colours are found on the bird." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Ask yourself, does the bird have a white belly, what is the colour of the back, does it have a distinctive crown on the head, or what colour is the vent?" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_morphology" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Patterns"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="Lots of species have distinctive patterns making them easy to recognize. Patterns might include barring, spots or streaks.  " />
+
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_africancrake" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="African crake has clear barring on its belly." />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_bennetswoodpecker" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Bennett’s woodpecker is the only woodpecker with spots on its chest making it easy to identify. " />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_lesserstripedswallow" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Lesser stripe swallow has heavy bold streaks, making it easy to distinguish between a Greatest Striped Swallow which has light narrow streaking." />
+            </LinearLayout>
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="Another good example of patterns being useful is between a Jacobin’s and Levaillant’s Cuckoo.
+Both look very similar but when you look at their chest you will notice the Jacobins Cuckoo has a clean white chest and the Levaillant’s has black stripes.
+" />
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_jacobinscuckoo" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Jacobin Cuckoo -  notice the clean white chest." />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearlayoutinfo"
+                android:background="@color/Brown2">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/zzz_levaillantcuckoo" />
+
+                <TextView
+                    style="@style/birdpictureinfo"
+                    android:text="Levaillant’s Cuckoo – throat and chest is streaked" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/habitat"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Habitat" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Birds can fly and cover large distances, which has allowed them to specialize in a wide variety of habitats which contributed to their high number of species. Despite their ability to fly, birds tend to stay within a specific habitat, which can be helpful in identifying them. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="These habitats include coastal bush, woodland, grassland, montane forest, semi-desert, desert, fynbos, and aquatic habitats. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Within these habitats, there may be specific areas such as rocky hills or outcrops, patches of denser scrub, water courses lined with trees, or wetlands. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Understanding the habitat description can provide essential information for identifying a bird or, in some cases, help narrow down available options by eliminating competing possibilities." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="For example, you would not expect to see a gull looking for insects in the foliage of a tree in the savanna." />
+
+
+            <TextView
+                android:id="@+id/habits"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Habits" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Birds tend to have specific habits and routines, and by observing them over time, you can learn more about their behaviour and patterns. This can help you identify a bird or place it into a particular group or family. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="To learn about the habits of birds, all you need to do is pay attention and observe them. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="For example, red-billed Quelea are often found in large flocks, Brown-snake Eagles tend to sit on top of dead trees in plain sight, and Burchell's Coucals often run around inside bushes. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="By learning these habits, you can gain additional information that can be useful in identifying birds." />
+
+
+            <TextView
+                android:id="@+id/flightpatterns"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:background="@color/ilalalight"
+                android:text="Flight Patterns" />
+
+            <TextView
+
+
+                style="@style/textinfo"
+                android:text="Hornbills and woodpeckers tend to flap their wings for a short distance, then descend and start flapping again, creating a dipping motion." />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_flightpatternhornbill" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Doves tend to glide smoothly through the air often have a slight whistle caused by the wings." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_flightpatterndove" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Some birds that must cover large distance fly in the characteristic v-formation to save energy. Geese, Swans, Cranes, Cormorants Ibis, and Ducks are known to fly in this formation." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_flightpatternsstorks" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Bataleur has a very short tail, which can cause it to be unstable in flight and exhibit a distinctive wobbly motion as it sways from side to side." />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_bateluer" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

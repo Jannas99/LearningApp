@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GrasslandInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Grassland" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Grassland covers almost 28% of South Africa's surface, occurring at elevations ranging from sea level to 2850m." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_grasslandbiomemap" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Found in moist seasonal areas with a summer rainfall ranging from 400 to 2000 mm per year. Frequent fires, cold winter temperatures, and high levels of grazing supresses tree growth contributing to the dominance of grass in this biome." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="There are two main types of grassland: temperate and tropical." />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Temprate Grasslands"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Temperate or high-altitude grasslands are found at higher elevations, typically above 1000m, with high all year rainfall and very cold winters." />
+            <TextView
+                style="@style/textinfo"
+
+                android:text="Temperate grasslands are home to a variety of bird species, including buzzards, cisticolas, larks, pipits, widowbirds, and waxbills. During the summer months, large numbers of migratory birds, such as falcons, kestrels, buzzards, storks, pratincoles, and swallows, mostly from the Palearctic region, can be found in these grasslands. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Many endemic species also occur in the temperate regions, such as the Southern Bald Ibis, Blue Crane, and Blue Korhaan, Rudd's Lark and Botha's lark."/>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Tropical Grasslands"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Tropical or Sub-tropical grasslands are found at elevations lower then 1000m, with typically warmer weather. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Depending on the amount of rain, tropical grassland can be divided into 2 groups, namely Mesic Highveld Grassland where the annual rainfall is above 600mm, and Dry Highveld Grassland which has rainfall below 600m" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="Some typical bird species found in Mesic Highveld include the Black-rumped Buttonquail, Blue Quail, Swamp Nightjar, Grey-rumped Swallow, and Rosy-throated Longclaw, while the more arid Dry Highveld is characterized by various coursers, lapwings larks and pipits"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

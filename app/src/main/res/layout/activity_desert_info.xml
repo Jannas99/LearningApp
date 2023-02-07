@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/zzz_desertbackground"
+    tools:context=".DesertInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Desert" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="
+The Namib is southern Africa's only true desert, being the driest of the summer-rainfall biomes and receiving only 10-70mm of rain per year.
+" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_desertbiomemap" />
+
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Coastal fog, which is almost a daily occurrence, is a huge source of water for many animals and also determines their distribution. Plant diversity is the lowest of all the biomes." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="A sparse cover of shrubs dominates the scant desert vegetation, but annual herbs, especially grasses, are the most diverse in terms of their species. Some perennial plants are encountered in specific habitats, of which the well-known Welwitschia is one." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Bird life is scarce but does include a few special birds that have adapted to life in this difficult terrain, including the Common Ostrich, Ruppell's Korhaan, Burchell's Courser, Gray Lark, and Dune Lark" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="Includes true desert (although found mainly in Namibia) and semi-desert habitats. Also the Arid Acacia savanna centred in the western half of the sub-region." />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

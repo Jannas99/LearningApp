@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biome Lists"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/savannaeast"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line4" />
+
+        <Button
+            android:id="@+id/savannaeast"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Eastern Savanna"
+            app:layout_constraintBottom_toTopOf="@+id/savannawest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <Button
+            android:id="@+id/fynbos"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Fynbos"
+            app:layout_constraintBottom_toTopOf="@+id/thicket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/karoo" />
+
+        <Button
+            android:id="@+id/forest"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Forest"
+            app:layout_constraintBottom_toBottomOf="@id/line2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thicket" />
+
+        <Button
+            android:id="@+id/savannawest"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Western Savanna"
+            app:layout_constraintBottom_toTopOf="@+id/grassland"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/savannaeast" />
+
+        <Button
+            android:id="@+id/arid"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Arid/Desert"
+            app:layout_constraintBottom_toTopOf="@+id/karoo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/grassland" />
+
+        <Button
+            android:id="@+id/thicket"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Thicket"
+            app:layout_constraintBottom_toTopOf="@+id/forest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fynbos" />
+
+        <Button
+            android:id="@+id/karoo"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Karoo"
+            app:layout_constraintBottom_toTopOf="@+id/fynbos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arid" />
+
+        <Button
+            android:id="@+id/grassland"
+            style="@style/MenuButton2xxhdpi"
+            android:text="Grassland"
+            app:layout_constraintBottom_toTopOf="@+id/arid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/savannawest" />
+
+        <Button
+            android:id="@+id/basic"
+            style="@style/MenuButton1xxhdpi"
+            android:backgroundTint="@color/ilaladark"
+            android:text="Basic"
+            app:layout_constraintBottom_toTopOf="@+id/core"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <Button
+            android:id="@+id/core"
+            style="@style/MenuButton1xxhdpi"
+            android:backgroundTint="@color/ilaladark"
+            android:text="Core"
+            app:layout_constraintBottom_toTopOf="@+id/line4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/basic" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Standard Lists"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/basic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/line3" />
+
+
+        <TextView
+            android:id="@+id/savedlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Practive Saved List"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/savedbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/forest" />
+
+        <Button
+            android:id="@+id/savedbtn"
+            style="@style/MenuButton1xxhdpi"
+            android:text="Your saved List"
+            android:backgroundTint="@color/ilaladark"
+            app:layout_constraintBottom_toBottomOf="@id/line5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/savedlist" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/forest"
+            app:layout_constraintGuide_percent="0.8"
+            app:layout_constraintStart_toStartOf="@+id/forest" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintGuide_percent="0.025"
+            app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/arid"
+            app:layout_constraintGuide_percent="0.25"
+            app:layout_constraintStart_toStartOf="@+id/arid" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/line5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/forest"
+            app:layout_constraintGuide_percent="0.95"
+            app:layout_constraintStart_toStartOf="@+id/forest" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/navigationview"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/Font"
+        app:itemIconTint="@color/ilaladarkest"
+        app:itemIconSize="30dp"/>
+</androidx.drawerlayout.widget.DrawerLayout>

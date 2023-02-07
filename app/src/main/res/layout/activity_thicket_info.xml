@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThicketInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Thicket" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Thicket Biome occupies a boundary or transitional zone between summer and winter rainfall that averages 200-900mm a year." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_thicketbiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Rainfall is high enough to support thicket vegetation but not enough to turn the thicket into a forest, thus creating an almost impenetrable shrubland to low forest dominated by evergreen, sclerophyllous or succulent trees, shrubs and vines, many of which have spines" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Geology is very complex resulting in various soil types that constantly changes over short distances. This, along with the climate, is what creates the fine-scaled variations leading to a diverse and species rich vegetation."/>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="This biome can be divided into 6 vegetation types" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Dune thickets "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Typically found on sand dunes, and are characterized by dense, low-growing shrubs that are adapted to the dry, sandy conditions. " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Valley thickets"
+                android:layout_marginTop="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Typically found in valleys and low-lying areas, and are characterized by taller, more densely packed shrubs and small trees." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Spekboom succulent thickets"
+                android:layout_marginTop="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Characterized by the presence of the spekboom plant, which is a type of succulent with thick, fleshy leaves. " />
+            <TextView
+                style="@style/textinfo"
+                android:text="Mesic succulent thickets"
+                android:layout_marginTop="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Found in areas with a moderate level of moisture and are characterized by a mix of succulent and non-succulent plants. " />
+            <TextView
+                style="@style/textinfo"
+                android:text="Xeric succulent thickets"
+                android:layout_marginTop="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Found in very dry, arid regions, and are characterized by a high diversity of succulent plants." />
+            <TextView
+                style="@style/textinfo"
+                android:text="Riverine thickets and forests"
+                android:layout_marginTop="0dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Found along rivers and streams, and are characterized by tall, dense stands of trees and shrubs. " />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="Characteristic bird species of this biome are the African Barred Owlet, Sombre Greenbul, Terrestrial Brownbul, Bar-throated Apalis, Green-backed Camaroptera, Southern Tchagra, and Southern Boubou" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

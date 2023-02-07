@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/janna/.gradle/caches/transforms-3/f0864f11ad6ba7269af692c790a618e9/transformed/material-1.6.1/res/drawable/mtrl_ic_arrow_drop_up.xml" value="0.2125" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable-v24/zzz_ic_launcher_foreground.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_default_option_border_dg.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_default_option_border_dg_2.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_exit_2.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_exit_screen.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_baseline_add_24.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_baseline_delete_24.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_baseline_save_24.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_launcher_background.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_name_off.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_name_on.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_photo_off.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_photo_on.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_play.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_play_green.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_shuffle.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_ic_volume_off.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_play.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_round_background.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_roundbutton.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_roundbutton_ilalagreen.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_roundimage.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_searchview_background.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/drawable/zzz_stop.xml" value="0.219" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/basic_list1.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/builder_list_1_saved.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/builder_list_1_savedtest.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/builder_list_1_start.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/core_list_start.xml" value="0.34210526315789475" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/items_row.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/items_row_personal_1.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/items_row_personal_1test.xml" value="0.536" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/row.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/rowtest.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/search_adaptor.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Bird Learning App/app/src/main/res/layout/show_picture.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.223" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable-v24/zzz_ic_launcher_foreground.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/default_option_border_dg.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/default_option_border_dg_2.xml" value="0.136" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_arrow_drop_down_24.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.164" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_pets_24.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_play_circle_filled_24.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_baseline_volume_mute_24.xml" value="0.1125" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.223" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_photo.xml" value="0.222" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/ic_play.xml" value="0.191" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/play.xml" value="0.1655" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/round_background.xml" value="0.1885" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/roundbutton.xml" value="0.1455" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/roundbutton2.xml" value="0.1595" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/roundimage.xml" value="0.1825" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/searchview_background.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/stop.xml" value="0.1655" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_default_option_border_dg.xml" value="0.1655" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_default_option_border_dg_2.xml" value="0.1655" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_add_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_add_circle_outline_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_arrow_drop_down_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_delete_24.xml" value="0.191" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_play_circle_filled_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_save_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_stop_circle_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_baseline_volume_mute_24.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_launcher_background.xml" value="0.2315" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_name.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_name_on.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_photo.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_photo_on.xml" value="0.1255" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_play.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_play_green.xml" value="0.1425" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_shuffle.xml" value="0.1655" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_ic_volume_off.xml" value="0.234" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_round_background.xml" value="0.1095" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_roundbutton.xml" value="0.1095" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_roundbutton2.xml" value="0.1095" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_roundbutton_white.xml" value="0.1255" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_roundimage.xml" value="0.1095" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/drawable/zzz_searchview_background.xml" value="0.1095" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/CoreSearch.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_basic_list2.xml" value="0.2375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_basic_list_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_basicbirdlistlist.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_basiclist2.xml" value="0.2234375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_basiclist_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_main2.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_main_Test.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/activity_your_saved_lists.xml" value="0.309375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/all_begginers_list.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/arid_regions.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/basic_all.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/basic_list1.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/basic_list_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/basic_saved.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/builder_list.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/builder_list_1.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/builder_list_1_saved.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/builder_list_1_start.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/core_list_start.xml" value="0.34183266932270917" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/core_search.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/forest_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/fragment_basic_bird_list_list.xml" value="0.2234375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/fragment_item.xml" value="0.2234375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/fragment_item_list.xml" value="0.20625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/fynbos_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/hoop.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/hoop_list.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/introduction_start.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/items_row.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/items_row_personal_1.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/items_row_personal_1test.xml" value="0.536" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/karoo_start.xml" value="0.1" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/list_view_text_properties.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/listview_properties.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/listview_text_properties.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/listview_text_properties_personal_1.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/marine_birds_start.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/montane_grass_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/row.xml" value="0.5115384615384615" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/row2.xml" value="0.4" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/rowtest.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savanna_east_search.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savanna_east_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savanna_start.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savanna_west_search.xml" value="0.33515625" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savanna_west_start.xml" value="0.264" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/savannawest_start.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/test.xml" value="0.176" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/test_list_item.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/text_properties.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/layout/thicket_biome.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.123" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/Hallo Meneer/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.123" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/MyApplication35/app/src/main/res/layout/activity_main.xml" value="0.2234375" />
+        <entry key="..\:/Users/janna/AndroidStudioProjects/MyApplication35/app/src/main/res/layout/activity_main2.xml" value="0.2" />
+        <entry key="..\:/Users/janna/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/hoop.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/janna/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/test_list_item.xml" value="0.1834117144078666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

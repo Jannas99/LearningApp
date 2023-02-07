@@ -1,0 +1,337 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ArraylistOfObjectsIntoSpinner" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/Font</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/Green2</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/ilala</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme_Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:bottomRightRadius">10dp</item>
+        <item name="android:bottomLeftRadius">10dp</item>
+        <item name="android:topRightRadius">10dp</item>
+        <item name="android:topLeftRadius">10dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+    <style name="MainList_Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:bottomRightRadius">20dp</item>
+        <item name="android:bottomLeftRadius">20dp</item>
+        <item name="android:topRightRadius">20dp</item>
+        <item name="android:topLeftRadius">20dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+    </style>
+    <!-- Main Buttons. -->
+    <style name="MenuButton1">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MenuButton2">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/Font</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <!-- Button xxxhdpi -->
+    <style name="MenuButton1xxxhdpi">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MenuButton2xxxhdpi">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/Font</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+
+    <!-- Button xxhdpi -->
+    <style name="MenuButton1xxhdpi">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MenuButton2xxhdpi">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">100dp</item>
+        <item name="android:layout_marginLeft">100dp</item>
+    </style>
+
+    <!-- Button xhdpi. -->
+    <style name="MenuButton1xhdpi">
+        <item name="android:textSize">10sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginTop">7.5dp</item>
+        <item name="android:layout_marginBottom">7.5dp</item>
+    </style>
+
+    <style name="MenuButton2xhdpi">
+        <item name="android:textSize">10sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <!-- Button hdpi. -->
+    <style name="MenuButton1hdpi">
+        <item name="android:textSize">8sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <!-- Button  Core_Start    hdpi. -->
+    <style name="MenuButton2hdpi">
+        <item name="android:textSize">8sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <!-- Main Buttons. -->
+    <style name="CoreButton1">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textStyle">italic</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CoreButton2">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <style name="CoreButton1xhdpi">
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CoreButton2xhdpi">
+        <item name="android:textSize">12sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <style name="CoreButton1hdpi">
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CoreButton2hdpi">
+        <item name="android:textSize">10sp</item>
+        <item name="cornerRadius">5dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/ilaladark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">80dp</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <style name="MenuList">
+        <item name="android:textSize">30sp</item>
+
+    </style>
+
+    <style name="indexinfo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:clickable">true</item>
+
+
+    </style>
+
+    <style name="headingforinfo">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">20dp</item>
+
+    </style>
+
+    <style name="textinfo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="linearlayoutinfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+
+    </style>
+
+    <style name="textexmple">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+    <style name="birdpictureinfo">
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="floatingbuttons1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/ilalalight</item>
+        <item name="layout_constraintVertical_bias">0.97</item>
+        <item name="layout_constraintHorizontal_bias">0.5</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+
+
+    <style name="Theme.ArraylistOfObjectsIntoSpinner.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ArraylistOfObjectsIntoSpinner.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ArraylistOfObjectsIntoSpinner.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

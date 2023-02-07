@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Main Menu</string>
+    <string name="play_sound">Play Sound</string>
+    <string name="bird_image">Bird Image</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Basic_List_1">
+
+
+</string>
+
+    <string name="List_2_ButtonText">List 2</string>
+    <string name="All_ButtonText">Beginners All</string>
+    <string name="beginners_list_information">This is a very basic list with mostly very common species. If you are new to birds and birding its highly recommended that you first become familiar with this list. </string>
+
+    <string name="Regional_Information_1">The following contains a list of the biomes in which you might be operation. Before you start to practice these call its advised to have a good grasp of the Core bird list.</string>
+    <string name="Western_Savanna_Description_1">Due to the size of the Savanna biome and the amount of bird species it contains the list is divided into 2 parts, Western and Eastern The Western Savanna primarily covers the North West province and its North Western regions.</string>
+    <string name="Western_Savanna_Description_2">This includes Pilanesberg National Park and Madikwe which includes Broad-leaved woodland and Acacia savanna </string>
+    <string name="Eastern_Savanna_Description_1">Due to the size of the Savanna biome and the amount of bird species it contains the list is divided into 2 parts, Western and Eastern.</string>
+    <string name="Eastern_Savanna_Description_2">Six lists with a total of 166 species.</string>
+    <string name="Montane_Grassland_Information_1">Focusing mainly on the high-lying interior plateau of the grassland biome which also includes alpine grassland communities found at 3000m and above</string>
+    <string name="Montane_Grassland_Information_2">Bird found in Afromontane forest are also included which consists of localized patches at higher altitudes</string>
+    <string name="Karoo_Information">This includes the Succulent and Nama Karoo, which consists of semi-desert shrublands, extensive rocky outcrops and very little surface water</string>
+    <string name="Arid_Regions_Information">These regions are desert and semi-desert habitats also including arid acacia savanna.</string>
+    <string name="Forest_Information"><![CDATA[These include the sand forest in northern KZN, lowland forest & mangrove swamps along the eastern coastal plains and forest habitats along the Garden Route and Cape Peninsula]]></string>
+    <string name="Fynbos_Information">This Includes renosterveld, strandveld, mountain fynbos and coastal fynbos, that are confined to the extreme southern and western regions.</string>
+    <string name="Thicket_Biome_Information">This includes the Eastern Cape and the lowveld coastal regions of KZN</string>
+    <string name="Marine_Birds_Information">Both Pelagic species and seashore birds are include in this list.</string>
+    <string name="Core_info1">This list contains 277 species and is a very good start to further your birding knowledge.</string>
+    <string name="Core_info2">Species included are the more common birds that you will encounter all over Southern Africa which also includes endemic, flagship, and well-known species.</string>
+    <string name="Core_info3">Having a good grasp of this list will help you with the other lists and biomes. The 277 is divided into 9 sub lists of 30 species each.</string>
+    <string name="sound_quality_or_the_impression_of_the_song_is_a_subjective_that_differs_from_person_to_person">Sound quality, or the impression of the song is subjective and differs from person to person.</string>
+    <string name="title_activity_core_list_info">CoreListInfo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutThisApp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/index"
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Index" />
+
+
+            <TextView
+                android:id="@+id/aboutappindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="1. Why eLearning Birds"
+                />
+            <TextView
+                android:id="@+id/howtouseappindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="2. How to use this Application"
+                />
+            <TextView
+                android:id="@+id/howtopracticeindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="3. How to Practice"
+                />
+            <TextView
+                android:id="@+id/ethicsindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="5. Ethics"
+                />
+            <TextView
+                android:id="@+id/mimicaryindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="5. "
+                />
+            <TextView
+                android:id="@+id/alarmindex"
+                android:layout_marginTop="10dp"
+                style="@style/indexinfo"
+                android:text="6. "
+                />
+
+            <TextView
+                android:id="@+id/aboutapp"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:text="Why eLearning Birds"
+                android:background="@color/ilalalight"
+                />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="This application is designed specifically to teach and test a person's ability to identify birds in the field." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="You accomplish this by working through various bird slides that teaches the user the calls and appearance of the bird. The same slides also allow the user to test themselves or others to see if their abilities have improved" />
+            <TextView
+                style="@style/textinfo"
+                android:text="There are X bird species covered in this application, divided into 9 lists of which 2 are Standard Lists (Beginner and Core) and 7 regional lists (loosely based on the South African Biomes)" />
+            <TextView
+                style="@style/textinfo"
+                android:text="Although the focus is on South African birds, it does include many bird species of neighbouring countries."
+                />
+            <TextView
+                style="@style/textinfo"
+                android:text="In traditional bird apps, birds are typically presented in the order of name, picture, and call. This application introduces birds in a different order: first the bird's call, then its picture, and lastly its name. This change in the 'order of introduction' may seem trivial, but it has a significant impact on the user's ability to remember and recognize bird calls."/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="20dp"
+                android:text="Listen – Look – ID "
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="20dp"
+                android:text="This method can be remembered as 'Listen - Look - ID', which will be how you use this application."/>
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/howtouseapp"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:text="How to use this Application"
+                android:background="@color/ilalalight"
+                />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The application is designed and arrange to easily and quickly teach the user how to identify birds by working through the various lists."/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Each list has several bird species, and these lists are intern divided into Sub-Lists’ of 30 species each.  This is to help break up huge lists in more manageable pieces while helping you to keep track of your progress."/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Every list has its own ‘Create List’ function which allows the user to search, add and remove birds to their ‘Saved List’. This feature is very useful when you want to practice specific birds without having to work through the hole list."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_aboutinfo1" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="When you enter a sub-list, you will find the following." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_aboutinfo2" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The layout is designed to be simple and easy but most importantly, it allows you to follow the order of Listen, Look and ID. "/>
+            <TextView
+                style="@style/textinfo"
+
+                android:text="Listen – press the ‘play’ button and listen to the entire call."/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Look – press the ‘picture’ button and look at the bird. "/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="ID – Lastly you press the ‘name’ button to reveal the bird’s name."/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="10dp"
+                android:text="Pressing the ‘next’ button will stat a new slide and you repeat the process until you finish the list. "/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_aboutinfo3" />
+            <TextView
+                style="@style/textinfo"
+                android:text="If you struggle with certain birds the ‘add’ button allows you to save them to the ‘saved list’. You can then give more focus on these specific birds."/>
+            <TextView
+                style="@style/textinfo"
+                android:text="As you get more confident in your knowledge of each list you can use the ‘shuffle’ button the test your abilities."/>
+
+
+            <TextView
+                android:id="@+id/howtopractice"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:text="How to Practice"
+                android:background="@color/ilalalight"
+                />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="1. Make sure you follow the order Listen, look and ID. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="o   Listen to the call until it’s finished before you reveal the picture. " />
+            <TextView
+                style="@style/textinfo"
+                android:text="o   Study the picture for at least 5 seconds before you reveal the name." />
+            <TextView
+                style="@style/textinfo"
+                android:text="o   Read the name of the bird out loud to yourself." />
+            <TextView
+                style="@style/textinfo"
+                android:text="2. Read the “How to Id Birds” and “How to Id call” for a basic understand on bird identification. "/>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="o	Having a good knowledge of the Biomes is very advantageous in learning birds."/>
+
+            <TextView
+                android:id="@+id/ethics"
+                style="@style/headingforinfo"
+                android:layout_marginTop="10dp"
+                android:text="Ethics"
+                android:background="@color/ilalalight"
+                />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="These forests "/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

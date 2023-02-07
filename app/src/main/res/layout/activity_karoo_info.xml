@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KarooInfo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Karoo" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The Karoo region in South Africa is made up of two distinct biomes: The Succulent Karoo and the Nama-Karoo." />
+
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Succulent Karoo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_karoosucculentbiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="This semi-desert is the most species-rich of its kind in the world, with more species of succulent plants than any other vegetation type. It is also renowned for its annual spring display of orange, yellow, and mauve wildflowers. The terrain in this biome is typically undulating, with hilly and broken land." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The winter rainfall of about 200mm is too low to support fynbos and instead is characterized by a sparse growth of low succulent scrubs that support a unique assemblage of dwarf succulents." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Nama-Karoo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_karoonamabiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="30dp"
+                android:text="This biome, covering about 20% of South Africa, is an open, grassy dwarf shrubland that ranges from sandy to rocky plains, escarpments, and mesas. Deciduous shrubs predominate in this area, and fires are rare. It develops in regions where the summer rainfall is between 100 and 520mm per year." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="We however group both Succulent and Nama-karoo are grouped into one region.  Although both have distinctly different botanical characteristics, this does not seem to affect the bird population which tends to occur over both regions." />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The weather conditions in these regions are very unpredictable, leading to variations in the veld conditions from one area to another. This causes many bird species to be highly nomadic, constantly on the move looking for suitable habitats." />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="Despite the arid conditions of the Karoo, it is home to a diverse population of birds, with over 407 species. Of these, 294 species are considered typical of the region, including 10 endemic species such as the Karoo Korhaan, Karoo Lark, Red Lark, Sclater's Lark, Black-eared Sparrowlark, Karoo Eremomela, Cinnamon-breasted Warbler, Namaqua Warbler, Karoo Long-billed Lark, and Barlow's Lark." />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

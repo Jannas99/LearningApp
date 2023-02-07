@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/introductionBtn"
+        android:title="Introduction">
+        <menu>
+            <item
+                android:id="@+id/aboutThisApp"
+                android:title="About"
+                android:icon="@drawable/zzz_iconabout"/>
+            <item
+                android:id="@+id/howtoIdbirdvisually"
+                android:title="How to look at Birds"
+                android:icon="@drawable/zzz_iconlook"
+                />
+            <item
+                android:id="@+id/howtoIdbirdcalls"
+                android:title="How to listen for birds"
+                android:icon="@drawable/zzz_iconlisten"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/standard"
+        android:title="Standard Lists">
+
+        <menu>
+            <item
+                android:id="@+id/basicInfo"
+                android:title="Beginners List"
+                android:icon="@drawable/zzz_iconbeginner"/>
+            <item
+                android:id="@+id/coreInfo"
+                android:title="Core List"
+                android:icon="@drawable/zzz_iconcore"/>
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/biomes"
+        android:title="Biomes">
+        <menu>
+            <item
+                android:id="@+id/desert"
+                android:title="Desert/Arid"
+                android:iconTint="@color/ilaladark"
+                android:icon="@drawable/zzz_icondesert"/>
+            <item
+                android:id="@+id/karoo"
+                android:title="Karoo"
+                android:icon="@drawable/zzz_iconkaroo"/>
+            <item
+                android:id="@+id/savanna"
+                android:title="Savanna"
+                android:icon="@drawable/zzz_iconsavanna"/>
+            <item
+                android:id="@+id/fynbos"
+                android:icon="@drawable/zzz_iconfynbos"
+                android:title="Fynbos"
+                />
+            <item
+                android:id="@+id/grassland"
+                android:icon="@drawable/zzz_icongrass"
+                android:title="Grassland" />
+            <item
+                android:id="@+id/forest"
+                android:icon="@drawable/zzz_iconforest"
+                android:title="Forest" />
+            <item
+                android:id="@+id/thicket"
+                android:icon="@drawable/zzz_iconthicket"
+                android:title="Thicket" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/createList"
+        android:title="Create/Manage your own List"
+        android:icon="@drawable/zzz_create"/>
+    <item
+        android:id="@+id/six"
+        android:title="Contributers"
+        android:icon="@drawable/zzz_contributers"
+        android:iconTint="@color/ilaladark"/>
+</menu>

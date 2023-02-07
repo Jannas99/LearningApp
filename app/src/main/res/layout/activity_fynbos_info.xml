@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FynbosInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                style="@style/headingforinfo"
+                android:background="@color/ilalalight"
+                android:text="Fynbos" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Fynbos, which means ‘fine-bush’ in Afrikaans is, easily the most spectacular Biome with between 7000 to 8000 plant species." />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/zzz_fynbosbiomemap" />
+
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The rich plant diversity is a result of two factors, namely rock types occur in this region resulting in various soil types and rain fall that averages 180-350mm per year with most falling in winter as summers are normally dry and arid.  " />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Renosterveld and Fynbos are the two vegetation types occurring in this biome. Their distribution is determined by the amount of leeching in the soil. " />
+
+
+            <TextView
+                style="@style/textinfo"
+
+                android:text="Renosterveld prefers fertile, fine-grained soil, mainly clays, and silts with a lower rain fall which does not leech the soil. Renosterveld can develop on granite soils if the rainfall is less, thus limiting leaching.
+Fynbos however prefers well-leached, infertile soils, but under high rainfall conditions, granites and even shales become sufficiently leached to support Fynbos, replacing Renosterveld.
+"/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Renosterveld"
+                android:textSize="18sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Renosterveld is a type of vegetation characterized by the dominance of shrubs belonging to the Daisy Family (Asteraceae). These shrubs are known for their small, tough, grey leaves, and one species in particular, Renosterbos Dicerothamnus rhinocerotis, gives the vegetation type its name"/>
+
+            <TextView
+                style="@style/textinfo"
+                android:text="Fynbos"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Fynbos consists of  3 vegetation components which comprises most of the area in this biome."/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Restioid component, belonging Cape Reed Family (Restionaceae). Tend to look like shrubby grasses."/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:text="Ericoid component consisting of the families, Ericaceae, Bruniaceae and Thymelaeaceae. Tend to all have small, narrow rolled leaves "/>
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp"
+                android:text="Proteoid component. These plants, almost exclusively belong to the Proteaceae family, having broad, isobilateral leaves. "/>
+            <TextView
+                style="@style/textinfo"
+                android:text="Fire also has a huge part to play in the fynbos biome as plants have evolved to germinate after a fire. Intensity, amount, and time of the year it burns can greatly influence the distribution of fynbos.  When is burns to much the vegetation can’t establish a foot hold, and if it does not burn fynbos gives away to forest or thicket elements"/>
+
+            <TextView
+                style="@style/textinfo"
+                android:layout_marginBottom="120dp"
+                android:text="Despite its rich diversity of plants, with around 9000 species, the bird species diversity in the fynbos is notably low. However, several bird species are endemic to the fynbos, including the Black Harrier, Hottentot Buttonquail, Southern Black Korhaan, Cape Bulbul, Cape Rockjumper, Orange-breasted Sunbird, Cape Sugarbird, Cape Siskin, and Protea Canary."/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/tobasicliststart"
+        style="@style/floatingbuttons1"
+        android:text=" Practice List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/species"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/species"
+        style="@style/floatingbuttons1"
+        android:text="Species"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tobasicliststart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
