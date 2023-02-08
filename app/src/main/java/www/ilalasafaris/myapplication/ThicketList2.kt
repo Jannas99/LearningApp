@@ -22,7 +22,7 @@ class ThicketList2 : AppCompatActivity() {
 
         mBirdlist = DataStored.allSpecies()
         //Todo 1
-        val iterator = mBirdlist!!.slice(setOf(144 ,147 ,151 ,157 ,161 ,166 ,169 ,170 ,176 ,190 ,197 ,198 ,204 ,206 ,208 ,211 ,213 ,217 ,218 ,224 ,231 ,235 ,239 ,241 ,244 ,256 ,259 ,264 ,265 ,270 ,)).iterator()
+        val iterator = mBirdlist!!.slice(setOf(144 ,147 ,151 ,157 ,161 ,166 ,169 ,170 ,176 ,190 ,197 ,198 ,204 ,206 ,208 ,211 ,213 ,217 ,218 ,224 ,231 ,235 ,239 ,241 ,244 ,256 ,259 ,264 ,265 ,270)).iterator()
         while (iterator.hasNext()) {
             val i = iterator.next()
             mlist.add(i)

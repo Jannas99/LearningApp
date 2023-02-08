@@ -8,7 +8,6 @@ import www.ilalasafaris.myapplication.databinding.ActivityPracticeBinding
 
 
 class BasicList3 : AppCompatActivity() {
-
     private var binding: ActivityPracticeBinding? = null
     var mBirdlist: ArrayList<Birds>? = null
     val mlist: MutableList<Birds> = ArrayList()

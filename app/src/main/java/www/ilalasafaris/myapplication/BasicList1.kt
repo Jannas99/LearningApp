@@ -8,8 +8,6 @@ import www.ilalasafaris.myapplication.databinding.ActivityPracticeBinding
 
 
 class BasicList1 : AppCompatActivity() {
-
-
     private var binding: ActivityPracticeBinding? = null
     var mBirdlist: ArrayList<Birds>? = null
     val mlist: MutableList<Birds> = ArrayList()
@@ -40,7 +38,6 @@ class BasicList1 : AppCompatActivity() {
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
-        //Todo 2
         actionbar!!.title = "Basic 1"
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setHomeButtonEnabled(true)
