@@ -37,7 +37,6 @@ class GrasslandList1 : AppCompatActivity() {
         }
         private fun initActionBar() {
             val actionbar = supportActionBar
-            //Todo 2
             actionbar!!.title = "Grassland 1"
             actionbar.setDisplayHomeAsUpEnabled(true)
             actionbar.setHomeButtonEnabled(true)

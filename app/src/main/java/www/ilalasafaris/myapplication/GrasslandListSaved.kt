@@ -53,7 +53,6 @@ class GrasslandListSaved : AppCompatActivity() {
             }
         }
     }
-
     private fun initActionBar() {
         val actionbar = supportActionBar
         actionbar!!.title = "Grassland: Saved List"
