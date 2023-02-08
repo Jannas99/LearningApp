@@ -11,8 +11,6 @@ import www.ilalasafaris.myapplication.databinding.ActivityForestInfoBinding
 import www.ilalasafaris.myapplication.databinding.SpecieslListBinding
 
 class ForestInfo : AppCompatActivity() {
-
-
     lateinit var binding: ActivityForestInfoBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
