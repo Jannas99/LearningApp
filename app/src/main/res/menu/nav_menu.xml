@@ -43,6 +43,14 @@
         android:title="Biomes">
         <menu>
             <item
+                android:id="@+id/savanna"
+                android:title="Savanna"
+                android:icon="@drawable/zzz_iconsavanna"/>
+            <item
+                android:id="@+id/grassland"
+                android:icon="@drawable/zzz_icongrass"
+                android:title="Grassland" />
+            <item
                 android:id="@+id/desert"
                 android:title="Desert/Arid"
                 android:iconTint="@color/ilaladark"
@@ -52,26 +60,19 @@
                 android:title="Karoo"
                 android:icon="@drawable/zzz_iconkaroo"/>
             <item
-                android:id="@+id/savanna"
-                android:title="Savanna"
-                android:icon="@drawable/zzz_iconsavanna"/>
-            <item
                 android:id="@+id/fynbos"
                 android:icon="@drawable/zzz_iconfynbos"
                 android:title="Fynbos"
                 />
             <item
-                android:id="@+id/grassland"
-                android:icon="@drawable/zzz_icongrass"
-                android:title="Grassland" />
+                android:id="@+id/thicket"
+                android:icon="@drawable/zzz_iconthicket"
+                android:title="Thicket" />
             <item
                 android:id="@+id/forest"
                 android:icon="@drawable/zzz_iconforest"
                 android:title="Forest" />
-            <item
-                android:id="@+id/thicket"
-                android:icon="@drawable/zzz_iconthicket"
-                android:title="Thicket" />
+
         </menu>
     </item>
 
