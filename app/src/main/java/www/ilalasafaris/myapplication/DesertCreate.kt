@@ -106,8 +106,7 @@ class DesertCreate : AppCompatActivity() {
     private fun iflistisnotfull(birdList: ArrayList<DesertStart.Data>) {
         binding?.yourSaveList?.setOnClickListener {
             if (birdList.isNotEmpty()) {
-                //TODO 4
-                val intent = Intent(this, CoreListSaved::class.java)
+                val intent = Intent(this, DesertListSaved::class.java)
                 startActivity(intent)
                 MyMediaPlayer.instance!!.onBack()
                 finish()
@@ -117,8 +116,7 @@ class DesertCreate : AppCompatActivity() {
         }
         binding?.manageList?.setOnClickListener {
             if (birdList.isNotEmpty()) {
-                //TODO 5
-                val intent = Intent(this, CoreManage::class.java)
+                val intent = Intent(this, DesertManage::class.java)
                 startActivity(intent)
                 MyMediaPlayer.instance!!.onBack()
                 finish()
@@ -127,7 +125,6 @@ class DesertCreate : AppCompatActivity() {
             }
         }
     }
-
     private fun initActionBar() {
         val actionbar = supportActionBar
         actionbar!!.title = "Create List Desert"

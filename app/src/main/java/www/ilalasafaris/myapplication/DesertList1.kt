@@ -37,7 +37,6 @@ class DesertList1 : AppCompatActivity() {
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
-        //Todo 2
         actionbar!!.title = "Desert 1"
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setHomeButtonEnabled(true)
