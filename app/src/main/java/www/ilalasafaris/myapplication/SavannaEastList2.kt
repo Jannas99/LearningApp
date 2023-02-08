@@ -38,7 +38,6 @@ class SavannaEastList2 : AppCompatActivity() {
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
-        //Todo 2
         actionbar!!.title = "Eastern Savanna 2"
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setHomeButtonEnabled(true)
