@@ -102,7 +102,6 @@ class FynbosStart : AppCompatActivity() {
             updateDialog.setCancelable(false)
             val binding = SpecieslListBinding.inflate(layoutInflater)
             updateDialog.setContentView(binding.root)
-            //Todo Future: Consider using a recycler view instead of listview for displaying the bird lists.
             val mAdapter = ArrayAdapter(this, R.layout.listview_text_properties, R.id.textView, birdNames.sorted())
             binding.listview.adapter = mAdapter
             mAdapter.notifyDataSetChanged()
@@ -118,8 +117,7 @@ class FynbosStart : AppCompatActivity() {
     private fun yourOwnList(birdList: ArrayList<Data>) {
         binding?.btnSave?.setOnClickListener {
             if (birdList.isNotEmpty()) {
-                //Todo 10
-                val intent = Intent(this, CoreListSaved::class.java)
+                val intent = Intent(this, FynbosListSaved::class.java)
                 startActivity(intent)
             } else {
                 val builder = AlertDialog.Builder(this)
