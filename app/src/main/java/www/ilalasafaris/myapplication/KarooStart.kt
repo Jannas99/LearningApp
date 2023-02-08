@@ -87,7 +87,6 @@ class KarooStart : AppCompatActivity() {
                 updateDialog.setCancelable(false)
                 val binding = SpecieslListBinding.inflate(layoutInflater)
                 updateDialog.setContentView(binding.root)
-                //Todo Future: Consider using a recycler view instead of listview for displaying the bird lists.
                 val mAdapter = ArrayAdapter(this, R.layout.listview_text_properties, R.id.textView, birdNames.sorted())
                 binding.listview.adapter = mAdapter
                 mAdapter.notifyDataSetChanged()

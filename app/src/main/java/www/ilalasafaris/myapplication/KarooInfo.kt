@@ -30,7 +30,6 @@ class KarooInfo : AppCompatActivity() {
             val token = item.idbird
             birdname.add(token)
         }
-        //By putting the Adaptor outside of the onClickListener it only uses the adaptor once, instead of calling it everytime you click on the button.
         val mAdapter = ArrayAdapter(this, R.layout.listview_text_properties, R.id.textView, birdname.sorted())
 
         binding.species.setOnClickListener {

@@ -117,7 +117,6 @@ class KarooCreate : AppCompatActivity() {
         }
         binding?.manageList?.setOnClickListener {
             if (birdList.isNotEmpty()) {
-                //TODO 5
                 val intent = Intent(this, KarooManage::class.java)
                 startActivity(intent)
                 MyMediaPlayer.instance!!.onBack()
@@ -127,7 +126,6 @@ class KarooCreate : AppCompatActivity() {
             }
         }
     }
-
     private fun initActionBar() {
         val actionbar = supportActionBar
         actionbar!!.title = "Create List Karoo"

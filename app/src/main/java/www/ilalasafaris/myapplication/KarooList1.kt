@@ -37,7 +37,6 @@ class KarooList1 : AppCompatActivity() {
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
-        //Todo 2
         actionbar!!.title = "Karoo 1"
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setHomeButtonEnabled(true)
