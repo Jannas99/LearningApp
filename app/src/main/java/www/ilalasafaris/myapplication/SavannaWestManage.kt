@@ -26,7 +26,6 @@ class SavannaWestManage : AppCompatActivity() {
         setupOnBackPressedCallback()
         initActionBar()
 
-        // This "binding?.rvItemsList1?.visibility = View.GONE" is what stops the "Fix W/RecyclerView: No adapter attached; skipping layout." error. By putting RecyclerView's visibility to View.GONE when the activity is created and then setting it to View.VISIBLE after the adapter has been set.
         binding?.rvItemsList1?.visibility = View.GONE
 
         val birdDao = (application as BirdApp).db.daoBirds()

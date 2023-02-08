@@ -24,7 +24,6 @@ class SavannaWestListSaved : AppCompatActivity() {
         setupOnBackPressedCallback()
         readData()
         binding!!.btnSave.visibility = View.GONE
-
     }
     private  fun setQuestion() {
         val mlist = ArrayList<Birds>()
@@ -32,7 +31,6 @@ class SavannaWestListSaved : AppCompatActivity() {
             val birdsElement = Birds(element.id, element.idbird, element.name, element.sname, element.picture1, element.picture2, element.picture3, element.picture4, element.picture5, element.sound)
             mlist.add(birdsElement)
         }
-
         val questionsSetter = QuestionsSetter(this, binding!!, mlist, mCurrentposition)
         QuestionsSetter.instance = questionsSetter
         questionsSetter.setQuestion()
@@ -53,7 +51,6 @@ class SavannaWestListSaved : AppCompatActivity() {
             }
         }
     }
-
     private fun initActionBar() {
         val actionbar = supportActionBar
         actionbar!!.title = "Western Savanna: Saved List"

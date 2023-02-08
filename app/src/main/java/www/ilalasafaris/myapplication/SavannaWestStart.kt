@@ -96,16 +96,12 @@ class SavannaWestStart: AppCompatActivity() {
                 else -> throw IllegalArgumentException("Unknown button")
             }
             startActivity(intent)
-            //   finish()   Not adding this Finish Keeps the  Actvity open, This allows me to only call the 'finsih()' function in eg Corelist1 to move back to the CoreStart activity without having to start it agian or having to add "val intent = Intent(activity, CoreStart::class.java)
-            //            activity.startActivity(intent)
-            //           activity.finish()" in the corelist1 activity
         }
         button.setOnLongClickListener {
             val updateDialog = Dialog(this, R.style.Theme_Dialog)
             updateDialog.setCancelable(false)
             val binding = SpecieslListBinding.inflate(layoutInflater)
             updateDialog.setContentView(binding.root)
-            //Todo Future: Consider using a recycler view instead of listview for displaying the bird lists.
             val mAdapter = ArrayAdapter(this, R.layout.listview_text_properties, R.id.textView, birdNames.sorted())
             binding.listview.adapter = mAdapter
             mAdapter.notifyDataSetChanged()

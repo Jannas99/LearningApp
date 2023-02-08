@@ -71,7 +71,6 @@ class SavannaWestList1 : AppCompatActivity() {
 
         private fun initActionBar() {
             val actionbar = supportActionBar
-            //Todo 2
             actionbar!!.title = "Western Savanna 1"
             actionbar.setDisplayHomeAsUpEnabled(true)
             actionbar.setHomeButtonEnabled(true)
@@ -86,7 +85,6 @@ class SavannaWestList1 : AppCompatActivity() {
             }
             return super.onOptionsItemSelected(item)
         }
-
         private fun setupOnBackPressedCallback() {
             onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
                 override fun handleOnBackPressed() {
