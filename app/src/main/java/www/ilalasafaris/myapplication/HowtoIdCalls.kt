@@ -1,6 +1,5 @@
 package www.ilalasafaris.myapplication
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -36,7 +35,7 @@ class HowtoIdCalls : AppCompatActivity() {
                 R.id.tempoindex -> scrollTo(binding.tempo)
                 R.id.qualityindex -> scrollTo(binding.quality)
                 R.id.mimicaryindex -> scrollTo(binding.mimicary)
-                R.id.alarmindex -> scrollTo(binding.tempo)
+                R.id.alarmindex -> scrollTo(binding.alarm)
                 R.id.backtotop -> scrollTo(binding.index)
             }
         }
