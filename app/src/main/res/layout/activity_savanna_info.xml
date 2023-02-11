@@ -77,7 +77,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="The Savanna biome has been broken into East and West. The difference between the 2 can be broadly explained by ‘Veld Type’" />
+                android:text="The Savanna biome has been broken into East and West. The difference can be broadly explained by ‘Veld Type’" />
 
             <TextView
                 style="@style/textinfo"

@@ -89,7 +89,7 @@
             <TextView
                 style="@style/textinfo"
                 android:layout_marginBottom="120dp"
-                android:text="Some typical bird species found in Mesic Highveld include the Black-rumped Buttonquail, Blue Quail, Swamp Nightjar, Grey-rumped Swallow, and Rosy-throated Longclaw, while the more arid Dry Highveld is characterized by various coursers, lapwings larks and pipits"/>
+                android:text="Some typical bird species found in Mesic Highveld include the Black-rumped Buttonquail, Blue Quail, Swamp Nightjar, Grey-rumped Swallow, and Rosy-throated Longclaw, while the more arid Dry Highveld is characterized by various coursers, lapwing's, larks and pipits."/>
 
 
         </LinearLayout>
