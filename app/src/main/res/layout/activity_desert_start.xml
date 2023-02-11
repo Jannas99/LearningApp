@@ -29,7 +29,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="Includes true desert and semi-desert habitats. The arid acacia savanna centred in the western half of the sub-region has also been included."/>
+                android:text="Includes true desert and semi-desert habitats. The arid acacia savanna in the surrounding areas have also been added."/>
 
             <ImageView
                 android:layout_width="match_parent"
