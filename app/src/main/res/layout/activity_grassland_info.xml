@@ -31,11 +31,9 @@
                 style="@style/headingforinfo"
                 android:background="@color/ilalalight"
                 android:text="Grassland" />
-
-
             <TextView
                 style="@style/textinfo"
-                android:text="Grassland covers almost 28% of South Africa's surface, occurring at elevations ranging from sea level to 2850m." />
+                android:text="The Grassland Biome is of great importance to bird life, as it provides habitat for around 350 of the 847 bird species found in South Africa. This biome is particularly significant as it is home to 20% of the bird species listed as being at high risk of extinction, as well as 53% of the bird species that are unique to South Africa and can only be found there."/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -46,6 +44,9 @@
                 android:scaleType="fitXY"
                 android:src="@drawable/zzz_grasslandbiomemap" />
 
+            <TextView
+                style="@style/textinfo"
+                android:text="Grassland covers almost 28% of South Africa's surface, occurring at elevations ranging from sea level to 2850m." />
 
             <TextView
                 style="@style/textinfo"
