@@ -29,7 +29,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="This region covers the Succulent and Nama Karoo which include semi-desert shrublands and extensive rocky outcrops with     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" />
+                android:text="The Karoo region covers both Succulent and Nama Karoo biomes." />
 
             <ImageView
                 android:layout_width="match_parent"

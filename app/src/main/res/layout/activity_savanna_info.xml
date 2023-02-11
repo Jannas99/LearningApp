@@ -31,10 +31,10 @@
                 android:background="@color/ilalalight"
                 android:text="Savanna" />
 
-
             <TextView
                 style="@style/textinfo"
-                android:text="The savanna biome is the largest of all the biomes, characterised by a grassy ground covering and a discontinuous but prominent woody layer." />
+                android:text="The savanna biome has a high species number of birds due to its unique location, climate, and habitat diversity. The warm, subtropical climate with wet and dry seasons, along with the range of habitats it offers, including grasslands, woodlands, and wetlands, provides a rich array of ecological niches for bird species to thrive in."/>
+
 
             <ImageView
                 android:layout_width="match_parent"
@@ -44,6 +44,10 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
                 android:src="@drawable/zzz_savannabiomemap" />
+
+            <TextView
+                style="@style/textinfo"
+                android:text="The savanna biome is the largest of all the biomes, characterised by a grassy ground covering and a discontinuous but prominent woody layer." />
 
             <TextView
                 style="@style/textinfo"

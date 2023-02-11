@@ -36,6 +36,9 @@
 
             <TextView
                 style="@style/textinfo"
+                android:text="Despite the karoo being very arid, it is home to a diverse population of birds, with over 407 species. Of these, 294 species are considered typical of the region, including 10 endemic species such as the Karoo Korhaan, Karoo Lark, Red Lark, Sclater's Lark, Black-eared Sparrowlark, Karoo Eremomela, Cinnamon-breasted Warbler, Namaqua Warbler, Karoo Long-billed Lark, and Barlow's Lark." />
+            <TextView
+                style="@style/textinfo"
                 android:text="The Karoo region in South Africa is made up of two distinct biomes: The Succulent Karoo and the Nama-Karoo." />
 
 
@@ -85,16 +88,12 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="We however group both Succulent and Nama-karoo are grouped into one region.  Although both have distinctly different botanical characteristics, this does not seem to affect the bird population which tends to occur over both regions." />
-
-            <TextView
-                style="@style/textinfo"
-                android:text="The weather conditions in these regions are very unpredictable, leading to variations in the veld conditions from one area to another. This causes many bird species to be highly nomadic, constantly on the move looking for suitable habitats." />
+                android:text="The weather conditions in both these biomes are very unpredictable, leading to variations in the veld conditions from one area to another. This causes many bird species to be highly nomadic, constantly on the move looking for suitable habitats." />
 
             <TextView
                 style="@style/textinfo"
                 android:layout_marginBottom="120dp"
-                android:text="Despite the arid conditions of the Karoo, it is home to a diverse population of birds, with over 407 species. Of these, 294 species are considered typical of the region, including 10 endemic species such as the Karoo Korhaan, Karoo Lark, Red Lark, Sclater's Lark, Black-eared Sparrowlark, Karoo Eremomela, Cinnamon-breasted Warbler, Namaqua Warbler, Karoo Long-billed Lark, and Barlow's Lark." />
+                android:text="Although both Nama and Succulent karoo have distinctly different botanical characteristics, this does not seem to affect the bird populations which tend to occur over both regions, thus we grouped both Succulent and Nama-karoo into one region. " />
 
 
         </LinearLayout>

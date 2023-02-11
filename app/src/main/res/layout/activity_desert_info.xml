@@ -35,9 +35,8 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="
-The Namib is southern Africa's only true desert, being the driest of the summer-rainfall biomes and receiving only 10-70mm of rain per year.
-" />
+                android:text="Bird life in the desert biome is scarce but does include a few special birds that have adapted to life in this difficult terrain, including the Common Ostrich, Ruppell's Korhaan, Burchell's Courser, Gray Lark, and Dune Lark" />
+
 
             <ImageView
                 android:layout_width="match_parent"
@@ -52,19 +51,18 @@ The Namib is southern Africa's only true desert, being the driest of the summer-
 
             <TextView
                 style="@style/textinfo"
+                android:text="The Namib is southern Africa's only true desert, being the driest of the summer-rainfall biomes and receiving only 10-70mm of rain per year." />
+
+            <TextView
+                style="@style/textinfo"
                 android:text="Coastal fog, which is almost a daily occurrence, is a huge source of water for many animals and also determines their distribution. Plant diversity is the lowest of all the biomes." />
 
             <TextView
                 style="@style/textinfo"
                 android:text="A sparse cover of shrubs dominates the scant desert vegetation, but annual herbs, especially grasses, are the most diverse in terms of their species. Some perennial plants are encountered in specific habitats, of which the well-known Welwitschia is one." />
 
-            <TextView
-                style="@style/textinfo"
-                android:text="Bird life is scarce but does include a few special birds that have adapted to life in this difficult terrain, including the Common Ostrich, Ruppell's Korhaan, Burchell's Courser, Gray Lark, and Dune Lark" />
-            <TextView
-                style="@style/textinfo"
-                android:layout_marginBottom="120dp"
-                android:text="Includes true desert (although found mainly in Namibia) and semi-desert habitats. Also the Arid Acacia savanna centred in the western half of the sub-region." />
+
+
 
         </LinearLayout>
     </ScrollView>

@@ -29,7 +29,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="This region covers the high, interior plateau and  includes Temperate grasslands habitats above 3000m and in the localized Afromontane Forest."/>
+                android:text="This region covers the high, interior plateau and includes Temperate grasslands habitats above 3000m and in the localized Afromontane Forest."/>
 
             <ImageView
                 android:layout_width="match_parent"
