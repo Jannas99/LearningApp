@@ -4,12 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
+import android.widget.ScrollView
 import androidx.activity.OnBackPressedCallback
 import www.ilalasafaris.myapplication.databinding.ActivityAboutBinding
 
 class AboutThisApp : AppCompatActivity() {
 
-    private var binding:ActivityAboutBinding? = null
+    private lateinit var binding: ActivityAboutBinding
+    private val scrollView: ScrollView
+        get() = binding!!.scrollview
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityAboutBinding.inflate(layoutInflater)
@@ -19,7 +23,31 @@ class AboutThisApp : AppCompatActivity() {
         setupOnBackPressedCallback()
         initActionBar()
 
+        val clickListener = View.OnClickListener { view ->
+            when (view.id) {
+                R.id.aboutappindex -> scrollTo(binding.aboutapp)
+                R.id.howtouseappindex -> scrollTo(binding.howtouseapp)
+                R.id.howtopracticeindex -> scrollTo(binding.howtopractice)
+                R.id.backtotop-> scrollTo(binding.index)
+
+            }
+        }
+        binding.apply {
+            aboutappindex.setOnClickListener(clickListener)
+            howtouseappindex.setOnClickListener(clickListener)
+            howtopracticeindex.setOnClickListener(clickListener)
+            index.setOnClickListener(clickListener)
+            backtotop.setOnClickListener(clickListener)
+        }
+
     }
+    private fun scrollTo(view: View) {
+        scrollView.post {
+            val test = view.top - scrollView.paddingTop
+            scrollView.smoothScrollTo(0, test)
+        }
+    }
+
     private fun initActionBar() {
         val actionbar = supportActionBar
         actionbar!!.title = "About"
