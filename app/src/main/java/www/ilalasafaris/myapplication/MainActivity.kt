@@ -4,18 +4,23 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.StrictMode
 import android.view.MenuItem
+import android.view.View
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.google.android.material.navigation.NavigationView
 import kotlinx.coroutines.launch
 import www.ilalasafaris.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     lateinit var toggle: ActionBarDrawerToggle
+    private var navTest: NavigationView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +29,8 @@ class MainActivity : AppCompatActivity() {
 
         // Todo This code stops the "W/System: A resource failed to call close. " error. It seems to be the "val birdDao that does not close properly"
         StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder(StrictMode.getVmPolicy()).detectLeakedClosableObjects().build())
+
+       setupOnBackPressedCallback()
 
         binding.apply {
             toggle = ActionBarDrawerToggle(this@MainActivity, drawerLayout, R.string.open, R.string.close)
@@ -38,7 +45,8 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             supportActionBar?.setDisplayHomeAsUpEnabled(true)
-            navView.setNavigationItemSelectedListener {
+            navTest = navView
+            navTest!!.setNavigationItemSelectedListener {
                 when (it.itemId) {
                     R.id.aboutThisApp -> { startActivitynotcosingmain(AboutThisApp::class.java)}
                     R.id.howtoIdbirdvisually -> { startActivitynotcosingmain(HowToIdVisually::class.java)}
@@ -56,6 +64,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 true
             }
+
             basic.setOnClickListener { startActivity(BasicStart::class.java) }
             core.setOnClickListener { startActivity(CoreStart::class.java) }
             savannaeast.setOnClickListener { startActivity(SavannaEastStart::class.java) }
@@ -68,15 +77,17 @@ class MainActivity : AppCompatActivity() {
             thicket.setOnClickListener { startActivity(ThicketStart::class.java) }
         }
     }
+
+
     private fun startActivity(activityClass: Class<*>) {
         val intent = Intent(this, activityClass)
         startActivity(intent)
         finish()
     }
+
     private fun startActivitynotcosingmain(activityClass: Class<*>) {
         val intent = Intent(this, activityClass)
         startActivity(intent)
-        // finish()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -85,6 +96,18 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+    private fun setupOnBackPressedCallback() {
+        onBackPressedDispatcher.addCallback(this@MainActivity, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                if (navTest?.visibility == View.VISIBLE) {
+                    binding.drawerLayout.closeDrawer(GravityCompat.START)
+                } else {
+                    finishAffinity()
+                }
+            }
+        })
+    }
+
     private fun yourOwnList(birdList: ArrayList<Data>) {
         binding.savedbtn?.setOnClickListener {
             if (birdList.isNotEmpty()) {
