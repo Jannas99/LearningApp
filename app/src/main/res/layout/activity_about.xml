@@ -58,18 +58,6 @@
                 android:text="5. Ethics" />
 
             <TextView
-                android:id="@+id/mimicaryindex"
-                style="@style/indexinfo"
-                android:layout_marginTop="10dp"
-                android:text="5. " />
-
-            <TextView
-                android:id="@+id/alarmindex"
-                style="@style/indexinfo"
-                android:layout_marginTop="10dp"
-                android:text="6. " />
-
-            <TextView
                 android:id="@+id/aboutapp"
                 style="@style/headingforinfo"
                 android:layout_marginTop="10dp"
@@ -82,19 +70,16 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="You accomplish this by working through various bird slides that teaches the user the calls and appearance of the bird. The same slides also allow the user to test themselves or others to see if their abilities have improved" />
+                android:text="By working through various bird lists and slides the user gets taught calls and appearance of the bird in a very simple and easy process." />
 
             <TextView
                 style="@style/textinfo"
-                android:text="There are X bird species covered in this application, divided into 9 lists of which 2 are Standard Lists (Beginner and Core) and 7 regional lists (loosely based on the South African Biomes)" />
+                android:text="In traditional bird apps, birds are typically presented in the order of name, picture, and call. This application introduces birds in a different order: first the bird's call, then its picture, and lastly its name." />
 
             <TextView
                 style="@style/textinfo"
-                android:text="Although the focus is on South African birds, it does include many bird species of neighbouring countries." />
+                android:text="This change in the 'Order of Introduction' may seem trivial, but it has a significant impact on the user's ability to remember and recognize bird calls." />
 
-            <TextView
-                style="@style/textinfo"
-                android:text="In traditional bird apps, birds are typically presented in the order of name, picture, and call. This application introduces birds in a different order: first the bird's call, then its picture, and lastly its name. This change in the 'order of introduction' may seem trivial, but it has a significant impact on the user's ability to remember and recognize bird calls." />
 
             <TextView
                 style="@style/textinfo"
@@ -107,7 +92,7 @@
             <TextView
                 style="@style/textinfo"
                 android:layout_marginBottom="20dp"
-                android:text="This method can be remembered as 'Listen - Look - ID', which will be how you use this application." />
+                android:text="This method can be remembered as 'Listen - Look - ID' which is how you will be using this application." />
 
 
             <TextView
@@ -154,7 +139,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="The layout is designed to be simple and easy but most importantly, it allows you to follow the order of Listen, Look and ID. " />
+                android:text="The layout is designed to be simple and easy but most importantly, it allows you to follow the order of Listen, Look and ID." />
 
             <TextView
                 style="@style/textinfo"
@@ -164,17 +149,17 @@
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:text="Look – press the ‘picture’ button and look at the bird. " />
+                android:text="Look – press the ‘picture’ button and study the bird." />
 
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:text="ID – Lastly you press the ‘name’ button to reveal the bird’s name." />
+                android:text="ID – lastly you press the ‘name’ button to reveal the bird’s name." />
 
             <TextView
                 style="@style/textinfo"
                 android:layout_marginBottom="10dp"
-                android:text="Pressing the ‘next’ button will stat a new slide and you repeat the process until you finish the list. " />
+                android:text="Pressing the ‘next’ button will stat a new slide and you repeat the process until you finish the list." />
 
 
             <ImageView
@@ -188,7 +173,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="If you struggle with certain birds the ‘add’ button allows you to save them to the ‘saved list’. You can then give more focus on these specific birds." />
+                android:text="If you struggle with certain birds the ‘add’ button allows you to save them to the ‘saved list’. You can then give more focus on these specific birds at a later stage." />
 
             <TextView
                 style="@style/textinfo"
@@ -208,7 +193,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="o   Listen to the call until it’s finished before you reveal the picture. " />
+                android:text="o   Listen to the entire call until it’s finished before you reveal the picture." />
 
             <TextView
                 style="@style/textinfo"
@@ -224,19 +209,10 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="o	Having a good knowledge of the Biomes is very advantageous in learning birds." />
+                android:layout_marginBottom="100dp"
+                android:text="o	Having a good knowledge of the Biomes and vegetation is very advantageous in learning, finding and identifying birds." />
 
-            <TextView
-                android:id="@+id/ethics"
-                style="@style/headingforinfo"
-                android:layout_marginTop="10dp"
-                android:background="@color/ilalalight"
-                android:text="Ethics" />
 
-            <TextView
-                style="@style/textinfo"
-                android:layout_marginBottom="120dp"
-                android:text="These forests " />
 
         </LinearLayout>
     </ScrollView>
