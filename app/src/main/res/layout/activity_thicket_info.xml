@@ -48,7 +48,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="Rainfall is high enough to support thicket vegetation but not enough to turn the thicket into a forest, thus creating an almost impenetrable shrubland to low forest dominated by evergreen, sclerophyllous or succulent trees, shrubs and vines, many of which have spines" />
+                android:text="Rainfall is high enough to support thicket vegetation but not enough to turn the thicket into a forest, thus creating an almost impenetrable shrubland to low forest dominated by evergreen, sclerophyllous or succulent trees, shrubs and vines, many of which have spines." />
 
             <TextView
                 style="@style/textinfo"
@@ -56,7 +56,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="This biome can be divided into 6 vegetation types" />
+                android:text="This biome can be divided into 6 vegetation types." />
             <TextView
                 style="@style/textinfo"
                 android:text="Dune thickets "

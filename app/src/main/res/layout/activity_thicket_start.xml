@@ -29,7 +29,7 @@
 
             <TextView
                 style="@style/textinfo"
-                android:text="This list covers the Eastern Cape and Kwa-Zulu Natal lowveld coastal region"/>
+                android:text="This list covers the Eastern Cape and Kwa-Zulu Natal lowveld coastal region."/>
 
             <ImageView
                 android:layout_width="match_parent"

@@ -71,7 +71,7 @@ Fynbos however prefers well-leached, infertile soils, but under high rainfall co
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:text="Renosterveld is a type of vegetation characterized by the dominance of shrubs belonging to the Daisy Family (Asteraceae). These shrubs are known for their small, tough, grey leaves, and one species in particular, Renosterbos Dicerothamnus rhinocerotis, gives the vegetation type its name"/>
+                android:text="Renosterveld is a type of vegetation characterized by the dominance of shrubs belonging to the Daisy Family (Asteraceae). These shrubs are known for their small, tough, grey leaves, and one species in particular, Renosterbos Dicerothamnus rhinocerotis, gives the vegetation type its name."/>
 
             <TextView
                 style="@style/textinfo"
@@ -88,15 +88,15 @@ Fynbos however prefers well-leached, infertile soils, but under high rainfall co
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:text="Ericoid component consisting of the families, Ericaceae, Bruniaceae and Thymelaeaceae. Tend to all have small, narrow rolled leaves "/>
+                android:text="Ericoid component consisting of the families, Ericaceae, Bruniaceae and Thymelaeaceae. Tend to all have small, narrow rolled leaves."/>
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:layout_marginBottom="20dp"
                 android:text="Proteoid component. These plants, almost exclusively belong to the Proteaceae family, having broad, isobilateral leaves. "/>
             <TextView
                 style="@style/textinfo"
-                android:text="Fire also has a huge part to play in the fynbos biome as plants have evolved to germinate after a fire. Intensity, amount, and time of the year it burns can greatly influence the distribution of fynbos.  When is burns to much the vegetation can’t establish a foot hold, and if it does not burn fynbos gives away to forest or thicket elements"/>
+                android:layout_marginBottom="100dp"
+                android:text="Fire also has a huge part to play in the fynbos biome as plants have evolved to germinate after a fire. Intensity, amount, and time of the year it burns can greatly influence the distribution of fynbos.  When is burns to much the vegetation can’t establish a foot hold, and if it does not burn fynbos gives away to forest or thicket elements."/>
 
 
 

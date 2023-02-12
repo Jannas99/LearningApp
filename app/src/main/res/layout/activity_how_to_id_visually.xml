@@ -96,12 +96,14 @@
             <TextView
                 style="@style/textinfo"
                 android:text="To get the most accurate identification, it is best to observe the bird before it flies away. Pay attention to details such as size, colour, behaviour, and any other distinctive features. Then, use this information to refer to a bird guide for identification." />
+
             <TextView
                 style="@style/textinfo"
-                android:text="As with any skill, it may take time and practice to become proficient at identifying birds. While it is possible that you may make mistakes along the way, even experts make mistakes at times. However, with patience and persistence, you will improve your ability to identify birds." />
+                android:text="As with any skill, it may take time and practice to become proficient at identifying birds. While it is possible that you may make mistakes along the way, even experts make mistakes at times. However, with patience and persistence, you will improve your abilities." />
+
             <TextView
                 style="@style/textinfo"
-                android:text="To aid in your efforts to identify birds, consider following these guidelines." />
+                android:text="To aid in your efforts, consider following these guidelines." />
             <TextView
                 android:id="@+id/shapeandsize"
                 style="@style/headingforinfo"
@@ -304,7 +306,7 @@ Herons all tend to have a similar shape regardless of their size.
             <TextView
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
-                android:text="These birds have extremely long, slender beaks that they use as probes. The bill is packed with sensitive receptors which helps to detect worms and larvae " />
+                android:text="These birds have extremely long, slender beaks that they use as probes. The bill is packed with sensitive receptors which helps to detect worms and larvae." />
 
             <LinearLayout
                 style="@style/linearlayoutinfo"
@@ -319,7 +321,7 @@ Herons all tend to have a similar shape regardless of their size.
 
                 <TextView
                     style="@style/birdpictureinfo"
-                    android:text="Examples include African hoopoe, Ibis, Sandpiper, Wood-hoopoes" />
+                    android:text="Examples include African hoopoe, Ibis, Sandpiper, Wood-hoopoes." />
             </LinearLayout>
 
             <TextView
@@ -385,7 +387,7 @@ Herons all tend to have a similar shape regardless of their size.
                 style="@style/textinfo"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp"
-                android:text="The colour of the bill can also be of great help to determine the species. In regards with kingfishers this is very applicable. " />
+                android:text="The colour of the bill can also be of great help to determine the species. In regards with kingfishers this is very noticeable." />
 
 
             <LinearLayout
@@ -522,7 +524,7 @@ Herons all tend to have a similar shape regardless of their size.
             <TextView
                 style="@style/textinfo"
                 android:layout_marginBottom="10dp"
-                android:text="Looking at the legs of eagles can also be useful as True eagles, like Wahlberg’s, Tawny and Martial eagles have feathered legs that extend all the way down to the feet, compared to other eagles like Bataleur and Brown-snake Eagles which have feathers only halfway down the legs. " />
+                android:text="Looking at the legs of eagles can also be useful. True eagles, like Wahlberg’s, Tawny and Martial eagles have feathered legs that extend all the way down to the feet, compared to other eagles like Bataleur and Brown-snake Eagles which have feathers only halfway down the legs. " />
 
             <LinearLayout
                 style="@style/linearlayoutinfo"
@@ -577,7 +579,7 @@ Herons all tend to have a similar shape regardless of their size.
 
             <TextView
                 style="@style/textinfo"
-                android:text="When looking at Colouration, try to determine the overall colour of the bird otherwise, if there are more then one colour, try to determine where the colours are found on the bird." />
+                android:text="When looking at Colouration, try to determine the overall colour of the bird otherwise, if there are more than one colour, try to determine where the colours are found on the bird." />
 
             <TextView
                 style="@style/textinfo"
@@ -743,9 +745,12 @@ Both look very similar but when you look at their chest you will notice the Jaco
                 android:background="@color/ilalalight"
                 android:text="Flight Patterns" />
 
+
             <TextView
+                style="@style/textinfo"
+                android:text="Some bird families tend to have a characteristic flight pattern that can be identified with practice and observation." />
 
-
+            <TextView
                 style="@style/textinfo"
                 android:text="Hornbills and woodpeckers tend to flap their wings for a short distance, then descend and start flapping again, creating a dipping motion." />
 
