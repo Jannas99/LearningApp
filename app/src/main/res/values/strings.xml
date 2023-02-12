@@ -30,7 +30,6 @@
     <string name="Core_info1">This list contains 277 species and is a very good start to further your birding knowledge.</string>
     <string name="Core_info2">Species included are the more common birds that you will encounter all over Southern Africa which also includes endemic, flagship, and well-known species.</string>
     <string name="Core_info3">Having a good grasp of this list will help you with the other lists and biomes. The 277 is divided into 9 sub lists of 30 species each.</string>
-    <string name="sound_quality_or_the_impression_of_the_song_is_a_subjective_that_differs_from_person_to_person">Sound quality, or the impression of the song is subjective and differs from person to person.</string>
     <string name="title_activity_core_list_info">CoreListInfo</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
