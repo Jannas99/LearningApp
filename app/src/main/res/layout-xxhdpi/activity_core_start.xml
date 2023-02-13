@@ -157,17 +157,15 @@
                 android:text="All Species" />
 
 
-
-
             <Button
                 android:id="@+id/btnSearch"
                 style="@style/CoreButton2"
                 android:backgroundTint="@color/ilalalight"
-                android:text="Create List"/>
+                android:text="Create List" />
 
             <Button
                 android:id="@+id/btnSave"
-                style="@style/CoreButton2"
+                style="@style/SaveListButton"
                 android:text="Saved List" />
         </LinearLayout>
 

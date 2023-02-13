@@ -93,7 +93,7 @@
 
             <Button
                 android:id="@+id/btnSave"
-                style="@style/CoreButton2"
+                style="@style/SaveListButton"
                 android:text="Saved List" />
         </LinearLayout>
 
