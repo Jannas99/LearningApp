@@ -131,7 +131,7 @@ class BuilderManage : AppCompatActivity() {
     private fun setupOnBackPressedCallback() {
         onBackPressedDispatcher.addCallback(this@BuilderManage, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                val intent = Intent(this@BuilderManage, CoreCreate::class.java)
+                val intent = Intent(this@BuilderManage, BuilderCreate::class.java)
                 startActivity(intent)
                 finish()
                 MyMediaPlayer.instance!!.onBack()

@@ -1,6 +1,6 @@
 package www.ilalasafaris.myapplication
 
-import android.content.Intent
+
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -32,6 +32,7 @@ class BuilderListSaved : AppCompatActivity() {
             val birdsElement = Birds(element.id, element.idbird, element.name, element.sname, element.picture1, element.picture2, element.picture3, element.picture4, element.picture5, element.sound)
             mlist.add(birdsElement)
         }
+
         val questionsSetter = QuestionsSetter(this, binding!!, mlist, mCurrentposition)
         QuestionsSetter.instance = questionsSetter
         questionsSetter.setQuestion()
@@ -62,10 +63,7 @@ class BuilderListSaved : AppCompatActivity() {
     private fun setupOnBackPressedCallback() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                val intent = Intent(this@BuilderListSaved, MainActivity::class.java)
-                startActivity(intent)
                 QuestionsSetter.instance?.onBack()
-
             }
         })
     }
@@ -79,6 +77,7 @@ class BuilderListSaved : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 }
+
 
 
 

@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity() {
 
                 val intent = Intent(this, BuilderListSaved::class.java)
                 startActivity(intent)
-                finish()
+
             } else {
                 val builder = AlertDialog.Builder(this)
                 builder.setTitle("No Birds Saved")
