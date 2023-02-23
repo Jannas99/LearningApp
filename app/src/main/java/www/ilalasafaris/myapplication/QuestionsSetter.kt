@@ -1,6 +1,9 @@
 package www.ilalasafaris.myapplication
 
+import android.animation.ValueAnimator
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.media.MediaPlayer
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -10,6 +13,7 @@ import kotlinx.coroutines.launch
 import www.ilalasafaris.myapplication.databinding.ActivityPracticeBinding
 import java.util.*
 import kotlin.collections.ArrayList
+
     class QuestionsSetter(
         private val activity: AppCompatActivity,
         private val binding: ActivityPracticeBinding,
@@ -27,6 +31,18 @@ import kotlin.collections.ArrayList
         }
 
         fun setQuestion() {
+            //This makes txtprogess TextView box flash when you press next or previous
+            val defaultColor = Color.parseColor("#FFFFFF")
+            val flashColor = Color.parseColor("#808f75")
+            val animator = ValueAnimator.ofArgb(defaultColor, flashColor, defaultColor)
+
+            animator.duration = 250
+            animator.addUpdateListener{
+                val background = binding.txtprogress.background as GradientDrawable
+                background.setColor(it.animatedValue as Int)
+            }
+            animator.start()
+
             //This makes the Progress bar and amount of birds in the list regulate
             val count = mlist.count().toString()
             binding.progress.max = count.toInt()
@@ -89,6 +105,7 @@ import kotlin.collections.ArrayList
                             textview.text = ""
                             textscience.text = ""
                             imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
+                            progress.progress = mCurrentposition
                             picture.setImageResource(R.drawable.zzz_ic_photo_off)
                             name.setImageResource(R.drawable.zzz_ic_name_off)
                         }
