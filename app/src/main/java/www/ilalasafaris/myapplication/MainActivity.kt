@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity() {
                     R.id.forest -> { startActivitynotcosingmain(ForestInfo::class.java)}
                     R.id.thicket -> { startActivitynotcosingmain(ThicketInfo::class.java)}
                     R.id.createList -> { startActivitynotcosingmain(BuilderCreate::class.java)}
+                    R.id.quiz -> { startActivitynotcosingmain(QuizMain::class.java)}
                 }
                 true
             }

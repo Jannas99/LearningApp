@@ -10,25 +10,23 @@ import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
-import www.ilalasafaris.myapplication.databinding.ActivityPracticeBinding
-import java.util.*
-import kotlin.collections.ArrayList
+import www.ilalasafaris.myapplication.databinding.ActivityQuizPracticeBinding
 
-    class QuestionsSetter(
-        private val activity: AppCompatActivity,
-        private val binding: ActivityPracticeBinding,
-        private val mlist: MutableList<Birds>,
-        private var mCurrentposition: Int) : ComponentActivity()
-{
-        private var mediaPlayer :MediaPlayer? = null
+class QuizSetter(
+    private val activity: AppCompatActivity,
+    private val binding: ActivityQuizPracticeBinding,
+    private val mlist: MutableList<Birds>,
+    private var mCurrentposition: Int) : ComponentActivity()
+    {
+        private var mediaPlayer : MediaPlayer? = null
         private val mToastDuration = 400
 
         //This help to solve the problem, when i clicked the onBackpress button it did not want to call the stop fucntion
         // This Companion Object, stores a reference to the original instance of QuestionsSetter in a static field or a singleton object, and then access this instance from the onBackPressed method the CoreList1
         companion object {
-            @SuppressLint("StaticFieldLeak")
-            var instance: QuestionsSetter? = null
-        }
+        @SuppressLint("StaticFieldLeak")
+        var instance: QuizSetter? = null
+    }
 
         fun setQuestion() {
             //This makes txtprogess TextView box flash when you press next or previous
@@ -72,46 +70,46 @@ import kotlin.collections.ArrayList
                     imageview.setImageResource(picBundle)
                     picture.setImageResource(R.drawable.zzz_ic_photo_on)
                 }
-                name.setOnClickListener {
-                    textview.text = question.name
-                    textscience.text = question.sname
-                    name.setImageResource(R.drawable.zzz_ic_name_on)
-                }
+//                name.setOnClickListener {
+//                    textview.text = question.name
+//                    textscience.text = question.sname
+//                    name.setImageResource(R.drawable.zzz_ic_name_on)
+//                }
                 binding.next.setOnClickListener {
                     if (mCurrentposition != mlist.size) {
                         mCurrentposition++
                         setQuestion()
                         stopCall()
                         binding.apply {
-                            textview.text = ""
-                            textscience.text = ""
+//                            textview.text = ""
+//                            textscience.text = ""
                             imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
                             progress.progress = mCurrentposition
                             picture.setImageResource(R.drawable.zzz_ic_photo_off)
-                            name.setImageResource(R.drawable.zzz_ic_name_off)
+//                            name.setImageResource(R.drawable.zzz_ic_name_off)
                         }
 
                     } else {
                         onBack()
                     }
                 }
-                previous.setOnClickListener {
-                    if (mCurrentposition > 1) {
-                        mCurrentposition--
-                        setQuestion()
-                        stopCall()
-                        binding.apply {
-                            textview.text = ""
-                            textscience.text = ""
-                            imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
-                            progress.progress = mCurrentposition
-                            picture.setImageResource(R.drawable.zzz_ic_photo_off)
-                            name.setImageResource(R.drawable.zzz_ic_name_off)
-                        }
-                    } else if (mCurrentposition >= 0) {
-                        onBack()
-                    }
-                }
+//                previous.setOnClickListener {
+//                    if (mCurrentposition > 1) {
+//                        mCurrentposition--
+//                        setQuestion()
+//                        stopCall()
+//                        binding.apply {
+//                            textview.text = ""
+//                            textscience.text = ""
+//                            imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
+//                            progress.progress = mCurrentposition
+//                            picture.setImageResource(R.drawable.zzz_ic_photo_off)
+//                            name.setImageResource(R.drawable.zzz_ic_name_off)
+//                        }
+//                    } else if (mCurrentposition >= 0) {
+//                        onBack()
+//                    }
+//                }
                 fun startCall() {
                     sound.setOnClickListener {
                         mediaPlayer = MediaPlayer.create(activity, question.sound)
@@ -130,14 +128,14 @@ import kotlin.collections.ArrayList
                     }
                 }
                 startCall()
-                random()
+
             }
         }
-        private fun random() {
-            binding.checkbox.setOnCheckedChangeListener { _, isChecked ->
-                if (isChecked) mlist.shuffle()
-            }
-        }
+//        private fun random() {
+//            binding.checkbox.setOnCheckedChangeListener { _, isChecked ->
+//                if (isChecked) mlist.shuffle()
+//            }
+//        }
         private fun finishcall() {
             mediaPlayer?.setOnCompletionListener {
                 mediaPlayer?.reset()
@@ -149,7 +147,7 @@ import kotlin.collections.ArrayList
         }
         fun onBack() {
             stopCall()
-           activity.finish()
+            activity.finish()
             // instance = null puts the QuestionSetter back to null to close it, Without the instacnce = null it remains open after a onBackpress and leaks memory
             instance = null
         }
@@ -296,101 +294,89 @@ import kotlin.collections.ArrayList
             }
         }
 
-    fun addRecordKaroo(birdsDao:DaoBirds) {
-        val question: Birds = mlist[mCurrentposition - 1]
-        val idbird = question.idbird
-        val name = question.name
-        val sname = question.sname
-        val picture1 = question.picture1
-        val picture2 = question.picture2
-        val picture3 = question.picture3
-        val picture4 = question.picture4
-        val picture5 = question.picture5
-        val sounds = question.sound
-        lifecycleScope.launch {
-            birdsDao.insert_Karoo(KarooStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
-                picture2 = picture2,
-                picture3 = picture3,
-                picture4 = picture4,
-                picture5 = picture5,  sound = sounds))
-            val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
-            mDisplayToast(mToast)
+        fun addRecordKaroo(birdsDao:DaoBirds) {
+            val question: Birds = mlist[mCurrentposition - 1]
+            val idbird = question.idbird
+            val name = question.name
+            val sname = question.sname
+            val picture1 = question.picture1
+            val picture2 = question.picture2
+            val picture3 = question.picture3
+            val picture4 = question.picture4
+            val picture5 = question.picture5
+            val sounds = question.sound
+            lifecycleScope.launch {
+                birdsDao.insert_Karoo(KarooStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
+                    picture2 = picture2,
+                    picture3 = picture3,
+                    picture4 = picture4,
+                    picture5 = picture5,  sound = sounds))
+                val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
+                mDisplayToast(mToast)
+            }
+        }
+        fun addRecordFynbos(birdsDao:DaoBirds) {
+            val question: Birds = mlist[mCurrentposition - 1]
+            val idbird = question.idbird
+            val name = question.name
+            val sname = question.sname
+            val picture1 = question.picture1
+            val picture2 = question.picture2
+            val picture3 = question.picture3
+            val picture4 = question.picture4
+            val picture5 = question.picture5
+            val sounds = question.sound
+            lifecycleScope.launch {
+                birdsDao.insert_Fynbos(FynbosStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
+                    picture2 = picture2,
+                    picture3 = picture3,
+                    picture4 = picture4,
+                    picture5 = picture5,  sound = sounds))
+                val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
+                mDisplayToast(mToast)
+            }
+        }
+
+        fun addRecordForest(birdsDao:DaoBirds) {
+            val question: Birds = mlist[mCurrentposition - 1]
+            val idbird = question.idbird
+            val name = question.name
+            val sname = question.sname
+            val picture1 = question.picture1
+            val picture2 = question.picture2
+            val picture3 = question.picture3
+            val picture4 = question.picture4
+            val picture5 = question.picture5
+            val sounds = question.sound
+            lifecycleScope.launch {
+                birdsDao.insert_Forest(ForestStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
+                    picture2 = picture2,
+                    picture3 = picture3,
+                    picture4 = picture4,
+                    picture5 = picture5,  sound = sounds))
+                val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
+                mDisplayToast(mToast)
+            }
+        }
+        fun addRecordThicket(birdsDao:DaoBirds) {
+            val question: Birds = mlist[mCurrentposition - 1]
+            val idbird = question.idbird
+            val name = question.name
+            val sname = question.sname
+            val picture1 = question.picture1
+            val picture2 = question.picture2
+            val picture3 = question.picture3
+            val picture4 = question.picture4
+            val picture5 = question.picture5
+            val sounds = question.sound
+            lifecycleScope.launch {
+                birdsDao.insert_Thicket(ThicketStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
+                    picture2 = picture2,
+                    picture3 = picture3,
+                    picture4 = picture4,
+                    picture5 = picture5,  sound = sounds))
+                val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
+                mDisplayToast(mToast)
+            }
         }
     }
-    fun addRecordFynbos(birdsDao:DaoBirds) {
-        val question: Birds = mlist[mCurrentposition - 1]
-        val idbird = question.idbird
-        val name = question.name
-        val sname = question.sname
-        val picture1 = question.picture1
-        val picture2 = question.picture2
-        val picture3 = question.picture3
-        val picture4 = question.picture4
-        val picture5 = question.picture5
-        val sounds = question.sound
-        lifecycleScope.launch {
-            birdsDao.insert_Fynbos(FynbosStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
-                picture2 = picture2,
-                picture3 = picture3,
-                picture4 = picture4,
-                picture5 = picture5,  sound = sounds))
-            val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
-            mDisplayToast(mToast)
-        }
-    }
-
-    fun addRecordForest(birdsDao:DaoBirds) {
-        val question: Birds = mlist[mCurrentposition - 1]
-        val idbird = question.idbird
-        val name = question.name
-        val sname = question.sname
-        val picture1 = question.picture1
-        val picture2 = question.picture2
-        val picture3 = question.picture3
-        val picture4 = question.picture4
-        val picture5 = question.picture5
-        val sounds = question.sound
-        lifecycleScope.launch {
-            birdsDao.insert_Forest(ForestStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
-                picture2 = picture2,
-                picture3 = picture3,
-                picture4 = picture4,
-                picture5 = picture5,  sound = sounds))
-            val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
-            mDisplayToast(mToast)
-        }
-    }
-    fun addRecordThicket(birdsDao:DaoBirds) {
-        val question: Birds = mlist[mCurrentposition - 1]
-        val idbird = question.idbird
-        val name = question.name
-        val sname = question.sname
-        val picture1 = question.picture1
-        val picture2 = question.picture2
-        val picture3 = question.picture3
-        val picture4 = question.picture4
-        val picture5 = question.picture5
-        val sounds = question.sound
-        lifecycleScope.launch {
-            birdsDao.insert_Thicket(ThicketStart.Data(idbird = idbird, name = name, sname = sname, picture1 = picture1,
-                picture2 = picture2,
-                picture3 = picture3,
-                picture4 = picture4,
-                picture5 = picture5,  sound = sounds))
-            val mToast = Toast.makeText(activity, "Bird Saved", Toast.LENGTH_LONG)
-            mDisplayToast(mToast)
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-

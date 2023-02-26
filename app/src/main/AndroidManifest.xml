@@ -18,6 +18,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArraylistOfObjectsIntoSpinner">
         <activity
+            android:name=".QuizPractice"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".QuizMain"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ThicketListSaved"
             android:exported="false">
             <meta-data

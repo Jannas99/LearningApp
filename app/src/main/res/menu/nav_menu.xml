@@ -81,6 +81,10 @@
         android:title="Create/Manage your own List"
         android:icon="@drawable/zzz_create"/>
     <item
+        android:id="@+id/quiz"
+        android:title="Quiz yourself"
+        android:icon="@drawable/zzz_create"/>
+    <item
         android:id="@+id/six"
         android:title="Contributers"
         android:icon="@drawable/zzz_contributers"
