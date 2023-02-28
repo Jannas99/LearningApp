@@ -79,7 +79,7 @@ class BuilderCreate : AppCompatActivity() {
         val aabirdname = AdaptorCreate(this, { showPictureId, showNameid -> displayPicture(showPictureId,showNameid) },mediaPlayer,mlist )
         binding?.lvSaved?.adapter = aabirdname
         binding?.lvSaved?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-        binding?.lvSaved?.adapter = aabirdname
+
 
         aabirdname.setOnItemClickListener(object :AdaptorCreate.OnItemClickListener{
             override fun onItemClick(position: Int) {
