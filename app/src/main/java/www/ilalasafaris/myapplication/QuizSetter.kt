@@ -2,6 +2,7 @@ package www.ilalasafaris.myapplication
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
+import android.app.AlertDialog
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.media.MediaPlayer
@@ -11,6 +12,8 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import www.ilalasafaris.myapplication.databinding.ActivityQuizPracticeBinding
+import www.ilalasafaris.myapplication.databinding.QuizResultsDialogBinding
+
 
 class QuizSetter(
     private val activity: AppCompatActivity,
@@ -22,6 +25,8 @@ class QuizSetter(
 ) : ComponentActivity() {
     private var mediaPlayer: MediaPlayer? = null
     private lateinit var correctAnswer:String
+    var points = 0
+
 
     companion object {
         @SuppressLint("StaticFieldLeak")
@@ -29,12 +34,14 @@ class QuizSetter(
     }
 
     fun setQuestion() {
-        val count = mlist.count().toString()
-        binding.progress.max = count.toInt()
+        val count = mlist.count()
+        binding.progress.max = count
         val sb = StringBuilder()
         sb.append("$mCurrentposition / ")
         sb.append(binding.progress.max)
         binding.txtprogress.text = sb.toString()
+        Log.e("points", "Points1: $sb")
+        Log.e("points", "count: $sb")
 
         val question: Birds = mlist[mCurrentposition - 1]
         val pictures1 = question.picture1
@@ -55,7 +62,7 @@ class QuizSetter(
         correctAnswer = question.name
 
         Log.e("BirdIdValue1", "correctAnswer: $correctAnswer")
-        Log.e("BirdIdValue2", "answer1: $answer")
+        Log.e("BirdIdValue2", "answer1: $points")
 
         binding.apply {
             picture.setOnClickListener {
@@ -64,11 +71,13 @@ class QuizSetter(
             }
 
             binding.next.setOnClickListener {
-                if (mCurrentposition != mlist.size && answer.isNotEmpty() ) {
+                if (mCurrentposition != mlist.size) {
                     mCurrentposition++
 
                     if (answer == correctAnswer ){
                         Toast.makeText(activity, "Correct", Toast.LENGTH_SHORT).show()
+                        pointCounter()
+
                     } else {
                         Toast.makeText(activity, "Incorrect", Toast.LENGTH_SHORT).show()
                     }
@@ -78,6 +87,7 @@ class QuizSetter(
                     txtprogresscolourflash()
                     setQuestion()
                     stopCall()
+
                     binding.apply {
                         imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
                         progress.progress = mCurrentposition
@@ -87,8 +97,7 @@ class QuizSetter(
                     Toast.makeText(activity, "Please select an answer", Toast.LENGTH_SHORT).show()
 
                 } else
-                    onBack()
-
+                    showCustomDialog(count,points)
             }
             fun startCall() {
                 sound.setOnClickListener {
@@ -138,7 +147,6 @@ class QuizSetter(
         val defaultColor = Color.parseColor("#FFFFFF")
         val flashColor = Color.parseColor("#808f75")
         val animator = ValueAnimator.ofArgb(defaultColor, flashColor, defaultColor)
-
         animator.duration = 250
         animator.addUpdateListener {
             val background = binding.txtprogress.background as GradientDrawable
@@ -146,5 +154,29 @@ class QuizSetter(
         }
         animator.start()
     }
+
+    fun showCustomDialog(total: Int, points: Int) {
+        val dialogBuilder = AlertDialog.Builder(activity)
+        val inflater = activity.layoutInflater
+        val binding = QuizResultsDialogBinding.inflate(inflater, null, false)
+        dialogBuilder.setView(binding.root)
+
+        binding.total.text = total.toString()
+        binding.points.text = points.toString()
+        val precentage = (points.toFloat() / total.toFloat() * 100).toInt()
+        binding.percent.text = precentage.toString()
+
+        val alertDialog = dialogBuilder.create()
+
+        binding.exit.setOnClickListener {
+            onBack()
+            alertDialog.dismiss()
+        }
+        alertDialog.show()
+    }
+    fun pointCounter() {
+            points += 1 // increment points
+            Log.e("points", "Points: $points")
+        }
 }
 

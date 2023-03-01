@@ -44,8 +44,8 @@ import kotlin.collections.ArrayList
             animator.start()
 
             //This makes the Progress bar and amount of birds in the list regulate
-            val count = mlist.count().toString()
-            binding.progress.max = count.toInt()
+            val count = mlist.count()
+            binding.progress.max = count
             val sb = StringBuilder()
             sb.append("$mCurrentposition / " )
             sb.append(binding.progress.max)
