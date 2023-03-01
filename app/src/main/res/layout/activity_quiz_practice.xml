@@ -215,7 +215,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.004"
-        app:queryHint="Search Bird" />
+        app:queryHint="Choose your answer" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvChoose"
@@ -224,6 +224,8 @@
         android:layout_marginTop="48dp"
         android:clipToPadding="false"
         android:scrollbarSize="8dp"
+        android:background="#99000000"
+        android:backgroundTint="@color/white"
         android:scrollbarStyle="insideOverlay"
         android:scrollbarThumbVertical="@color/Green2"
         android:visibility="gone"
@@ -232,6 +234,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/searchView"
         tools:visibility="visible" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

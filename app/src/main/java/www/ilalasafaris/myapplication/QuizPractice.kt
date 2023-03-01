@@ -45,7 +45,7 @@ class QuizPractice : AppCompatActivity() {
         binding!!.searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 binding!!.rvChoose.visibility = VISIBLE
-                binding!!.imageview.visibility = GONE
+      //          binding!!.imageview.visibility = GONE
             } else {
                 binding!!.rvChoose.visibility = GONE
                 binding!!.imageview.visibility = VISIBLE
@@ -83,18 +83,19 @@ class QuizPractice : AppCompatActivity() {
         adaptorSearchSaveData()
 
     }
+
     private fun adaptorSearchSaveData() {
         val aabirdname = AdaptorQuiz(this,slist)
         binding?.rvChoose?.adapter = aabirdname
         binding?.rvChoose?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
 
-        binding!!.searchView.setOnQueryTextListener(object:SearchView.OnQueryTextListener {
+        binding?.searchView?.setOnQueryTextListener(object:SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false
             }
             override fun onQueryTextChange(newText: String?): Boolean {
                 aabirdname.filter(newText)
-                val searchText = newText ?: "wrong2"
+                val searchText = newText ?: ""
                 if (newText != null) {
                     QuizSetter.instance?.setAnswer(newText)
                 }

@@ -19,6 +19,7 @@
         android:theme="@style/Theme.ArraylistOfObjectsIntoSpinner">
         <activity
             android:name=".QuizPractice"
+            android:windowSoftInputMode="adjustPan"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

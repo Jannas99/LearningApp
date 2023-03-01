@@ -6,9 +6,11 @@ import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.media.MediaPlayer
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
+import org.checkerframework.checker.index.qual.GTENegativeOne
 import www.ilalasafaris.myapplication.databinding.ActivityQuizPracticeBinding
 
 class QuizSetter(
@@ -20,7 +22,6 @@ class QuizSetter(
 
 ) : ComponentActivity() {
     private var mediaPlayer: MediaPlayer? = null
-    private val mToastDuration = 400
     private lateinit var correctAnswer:String
 
     companion object {
@@ -80,6 +81,11 @@ class QuizSetter(
                     if (answer == correctAnswer ){
                         Toast.makeText(activity, "Yes", Toast.LENGTH_SHORT).show()
                     }
+
+                    binding.searchView.setQuery("", false)
+                    binding.searchView.clearFocus()
+                    binding.rvChoose.visibility = View.GONE
+
                     setQuestion()
                     stopCall()
                     binding.apply {
@@ -139,14 +145,6 @@ class QuizSetter(
         mediaPlayer = null
         binding.sound.setImageResource(R.drawable.zzz_ic_play)
     }
-//    fun mDisplayToast(toast: Toast) {
-//        Thread {
-//            for (i in 1..mToastDuration / 400) {
-//                toast.show()
-//                Thread.sleep(400)
-//                toast.cancel()
-//            }
-//        }.start()
-//    }
+
 }
 
