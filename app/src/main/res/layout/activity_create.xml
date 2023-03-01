@@ -80,7 +80,7 @@
         android:layout_marginHorizontal="15dp"
         android:layout_marginBottom="20dp"
         android:background="@drawable/zzz_searchview_background"
-        android:backgroundTint="@color/Beidge1"
+        android:backgroundTint="@color/ilalalight"
         app:iconifiedByDefault="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

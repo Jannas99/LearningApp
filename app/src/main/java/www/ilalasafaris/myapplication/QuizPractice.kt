@@ -2,7 +2,6 @@ package www.ilalasafaris.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View.GONE
 import android.view.View.VISIBLE
@@ -29,26 +28,21 @@ class QuizPractice : AppCompatActivity() {
         initActionBar()
         adaptorSearchSaveData()
 
-
         mBirdlist = DataStored.allSpecies()
         val iterator = mBirdlist!!.slice(setOf(12 ,13 ,18 ,21 ,24 ,27 ,58 ,64 ,67 ,69 ,72 ,73 ,78 ,79 ,81 ,84 ,85 ,89 ,97 ,100 ,112 ,113 ,114 ,115 ,124 ,127 ,131 ,133 ,145 ,146)).iterator()
         while (iterator.hasNext()) {
             val i = iterator.next()
             mlist.add(i)
         }
-
         val questionsSetter = QuizSetter(this, binding!!, mlist,mCurrentposition,answer)
         QuizSetter.instance = questionsSetter
         questionsSetter.setQuestion()
 
-
-        binding!!.searchView.setOnQueryTextFocusChangeListener { _, hasFocus ->
+        binding?.searchView?.setOnQueryTextFocusChangeListener { _, hasFocus ->
             if (hasFocus) {
                 binding!!.rvChoose.visibility = VISIBLE
-      //          binding!!.imageview.visibility = GONE
             } else {
                 binding!!.rvChoose.visibility = GONE
-                binding!!.imageview.visibility = VISIBLE
             }
         }
         val iterator2 = mBirdlist!!.slice(setOf(7 ,11 ,12 ,13 ,20 ,21 ,25 ,27 ,28 ,33 ,47 ,49 ,50 ,53 ,55 ,58 ,62 ,71 ,84 ,87 ,92 ,95 ,97 ,100 ,115 ,116 ,129 ,131 ,132 ,133 ,134 ,135 ,138 ,144 ,148 ,154 ,156 ,160 ,163 ,168
@@ -81,28 +75,20 @@ class QuizPractice : AppCompatActivity() {
             slist.add(i)
         }
         adaptorSearchSaveData()
-
     }
-
     private fun adaptorSearchSaveData() {
         val aabirdname = AdaptorQuiz(this,slist)
         binding?.rvChoose?.adapter = aabirdname
         binding?.rvChoose?.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
-
-        binding?.searchView?.setOnQueryTextListener(object:SearchView.OnQueryTextListener {
+        binding?.searchView?.setOnQueryTextListener(object : SearchView.OnQueryTextListener{
             override fun onQueryTextSubmit(query: String?): Boolean {
                 return false
             }
             override fun onQueryTextChange(newText: String?): Boolean {
                 aabirdname.filter(newText)
-                val searchText = newText ?: ""
                 if (newText != null) {
                     QuizSetter.instance?.setAnswer(newText)
                 }
-
-                Log.e("BirdIdValue3", "searchText: $searchText")
-                answer = searchText
-                Log.e("BirdIdValue4", "answer2: $answer")
 
                 return false
             }
@@ -111,7 +97,6 @@ class QuizPractice : AppCompatActivity() {
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
-        //Todo 2
         actionbar!!.title = "Quiz"
         actionbar.setDisplayHomeAsUpEnabled(true)
         actionbar.setHomeButtonEnabled(true)
@@ -129,6 +114,7 @@ class QuizPractice : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 finish()
+                QuizSetter.instance = null
             }
         })
     }

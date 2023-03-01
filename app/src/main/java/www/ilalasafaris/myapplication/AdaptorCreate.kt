@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 import kotlin.collections.ArrayList
@@ -87,18 +88,23 @@ class AdaptorCreate(
         return arrayList.size
     }
     fun filter(textfilter: String?) {
-        val text = textfilter!!.lowercase(Locale.getDefault())
+        val text = textfilter?.lowercase(Locale.getDefault()) ?: ""
+        val oldList = ArrayList(arrayList)
         arrayList.clear()
+
         if (text.isEmpty()) {
             arrayList.addAll(tempNameVersionList)
         } else {
             for (i in 0 until tempNameVersionList.size) {
-                if (tempNameVersionList[i]!!.idbird.lowercase(Locale.getDefault()).contains(text)) {
+                if (tempNameVersionList[i].idbird.lowercase(Locale.getDefault()).contains(text)) {
                     arrayList.add(tempNameVersionList[i])
                 }
             }
         }
-        notifyItemRangeRemoved(0, tempNameVersionList.size)
-        notifyItemRangeInserted(0, arrayList.size)
+
+        val diffCallback = DiffCallback(oldList, arrayList)
+        val diffResult = DiffUtil.calculateDiff(diffCallback)
+
+        diffResult.dispatchUpdatesTo(this)
     }
 }

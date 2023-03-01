@@ -10,7 +10,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
-import org.checkerframework.checker.index.qual.GTENegativeOne
 import www.ilalasafaris.myapplication.databinding.ActivityQuizPracticeBinding
 
 class QuizSetter(
@@ -30,17 +29,6 @@ class QuizSetter(
     }
 
     fun setQuestion() {
-        val defaultColor = Color.parseColor("#FFFFFF")
-        val flashColor = Color.parseColor("#808f75")
-        val animator = ValueAnimator.ofArgb(defaultColor, flashColor, defaultColor)
-
-        animator.duration = 250
-        animator.addUpdateListener {
-            val background = binding.txtprogress.background as GradientDrawable
-            background.setColor(it.animatedValue as Int)
-        }
-        animator.start()
-
         val count = mlist.count().toString()
         binding.progress.max = count.toInt()
         val sb = StringBuilder()
@@ -64,7 +52,7 @@ class QuizSetter(
         allPictures.shuffle()
         val picBundle = allPictures[0]
 
-        correctAnswer = question.idbird
+        correctAnswer = question.name
 
         Log.e("BirdIdValue1", "correctAnswer: $correctAnswer")
         Log.e("BirdIdValue2", "answer1: $answer")
@@ -74,18 +62,20 @@ class QuizSetter(
                 imageview.setImageResource(picBundle)
                 picture.setImageResource(R.drawable.zzz_ic_photo_on)
             }
+
             binding.next.setOnClickListener {
-                if (mCurrentposition != mlist.size) {
+                if (mCurrentposition != mlist.size && answer.isNotEmpty() ) {
                     mCurrentposition++
 
                     if (answer == correctAnswer ){
-                        Toast.makeText(activity, "Yes", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(activity, "Correct", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(activity, "Incorrect", Toast.LENGTH_SHORT).show()
                     }
-
                     binding.searchView.setQuery("", false)
                     binding.searchView.clearFocus()
                     binding.rvChoose.visibility = View.GONE
-
+                    txtprogresscolourflash()
                     setQuestion()
                     stopCall()
                     binding.apply {
@@ -93,9 +83,12 @@ class QuizSetter(
                         progress.progress = mCurrentposition
                         picture.setImageResource(R.drawable.zzz_ic_photo_off)
                     }
-                } else {
+                } else if (answer.isEmpty()) {
+                    Toast.makeText(activity, "Please select an answer", Toast.LENGTH_SHORT).show()
+
+                } else
                     onBack()
-                }
+
             }
             fun startCall() {
                 sound.setOnClickListener {
@@ -103,7 +96,6 @@ class QuizSetter(
                     mediaPlayer?.start()
                     sound.setImageResource(R.drawable.zzz_ic_volume_off)
                     finishcall()
-
                     sound.setOnClickListener {
                         mediaPlayer?.stop()
                         mediaPlayer?.reset()
@@ -117,12 +109,10 @@ class QuizSetter(
             startCall()
         }
     }
-
     fun setAnswer(answer: String) {
         this.answer = answer
         setQuestion()
     }
-
     private fun finishcall() {
         mediaPlayer?.setOnCompletionListener {
             mediaPlayer?.reset()
@@ -132,7 +122,6 @@ class QuizSetter(
             binding.sound.setImageResource(R.drawable.zzz_ic_play)
         }
     }
-
     fun onBack() {
         stopCall()
         activity.finish()
@@ -145,6 +134,17 @@ class QuizSetter(
         mediaPlayer = null
         binding.sound.setImageResource(R.drawable.zzz_ic_play)
     }
+    fun txtprogresscolourflash(){
+        val defaultColor = Color.parseColor("#FFFFFF")
+        val flashColor = Color.parseColor("#808f75")
+        val animator = ValueAnimator.ofArgb(defaultColor, flashColor, defaultColor)
 
+        animator.duration = 250
+        animator.addUpdateListener {
+            val background = binding.txtprogress.background as GradientDrawable
+            background.setColor(it.animatedValue as Int)
+        }
+        animator.start()
+    }
 }
 
