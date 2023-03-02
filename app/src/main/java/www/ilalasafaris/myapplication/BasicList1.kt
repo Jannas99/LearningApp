@@ -23,7 +23,7 @@ class BasicList1 : AppCompatActivity() {
 
         mBirdlist = DataStored.allSpecies()
         //TODO 1
-        val iterator = mBirdlist!!.slice(setOf(17 ,10 ,13 ,14 ,15 ,18 ,24 ,25 ,28 ,29 ,33 ,35 ,39 ,42 ,43 ,45 ,46 ,47 ,48 ,65 ,73 ,74 ,75 ,79 ,80 ,84 ,87 ,88 ,91 ,94)).iterator()
+        val iterator = mBirdlist!!.slice(setOf(17,10 ,13 ,14 ,15 ,18 ,24 ,25 ,28 ,29 ,33 ,35 ,39 ,42 ,43 ,45 ,46 ,47 ,48 ,65 ,73 ,74 ,75 ,79 ,80 ,84 ,87 ,88 ,91 ,94)).iterator()
         while (iterator.hasNext()) {
             val i = iterator.next()
             mlist.add(i)

@@ -27,42 +27,53 @@
         app:layout_constraintVertical_bias="0.145"
         app:shapeAppearance="@style/Circular" />
 
-    <ImageButton
-        android:id="@+id/sound"
-        android:layout_width="78dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="184dp"
-        android:background="@drawable/zzz_roundbutton_ilalagreen"
-        android:src="@drawable/zzz_ic_play"
-        app:layout_constraintEnd_toStartOf="@+id/picture"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
-    <ImageButton
-        android:id="@+id/picture"
-        android:layout_width="78dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="184dp"
-        android:background="@drawable/zzz_roundbutton_ilalagreen"
-        android:src="@drawable/zzz_ic_photo_off"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/sound"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
-
-    <ImageButton
-        android:id="@+id/next"
-        android:layout_width="66dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="184dp"
-        android:background="@drawable/zzz_round_background"
-        android:src="@android:drawable/ic_media_next"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/picture"
-        app:layout_constraintTop_toTopOf="@+id/guideline11"
-        app:tint="@color/ilala" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline10">
+
+        <ImageButton
+            android:id="@+id/sound"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:background="@drawable/zzz_roundbutton_ilalagreen"
+            android:src="@drawable/zzz_ic_play"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/sound2"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:background="@drawable/zzz_roundbutton_ilalagreen"
+            android:src="@drawable/zzz_ic_volume_off"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/picture"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintDimensionRatio="2:1.5"
+            android:background="@drawable/zzz_roundbutton_ilalagreen"
+            android:src="@drawable/zzz_ic_photo_off" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="78dp"
+            android:layout_height="59dp"
+            android:background="@drawable/zzz_round_background"
+            android:src="@android:drawable/ic_media_next"
+            app:tint="@color/ilala" />
+    </LinearLayout>
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline1"
@@ -119,7 +130,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toStartOf="@+id/sound"
         app:layout_constraintGuide_percent="0.8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
@@ -222,16 +232,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:clipToPadding="false"
-        android:scrollbarSize="8dp"
         android:background="#99000000"
         android:backgroundTint="@color/white"
-        android:scrollbarStyle="insideOverlay"
-        android:scrollbarThumbVertical="@color/Green2"
+        android:paddingBottom="370dp"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/searchView"
-        tools:visibility="visible" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
 </androidx.constraintlayout.widget.ConstraintLayout>

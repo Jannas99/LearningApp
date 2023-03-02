@@ -10,7 +10,6 @@ import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import www.ilalasafaris.myapplication.databinding.ActivityQuizPracticeBinding
 
-
 class QuizPractice : AppCompatActivity() {
     private var binding: ActivityQuizPracticeBinding? = null
     var mBirdlist: ArrayList<Birds>? = null
@@ -18,6 +17,7 @@ class QuizPractice : AppCompatActivity() {
     var answer:String =""
     val slist: MutableList<Birds> = ArrayList()
     var mCurrentposition: Int = 1
+    var mediaplayer: MyMediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,14 +27,15 @@ class QuizPractice : AppCompatActivity() {
         setupOnBackPressedCallback()
         initActionBar()
         adaptorSearchSaveData()
+        mediaplayer = MyMediaPlayer.getInstance(this)
 
         mBirdlist = DataStored.allSpecies()
-        val iterator = mBirdlist!!.slice(setOf(12 ,13 ,18 ,21 ,24 ,27 ,58 ,64 ,67 ,69 ,72 ,73 ,78 ,79 ,81 ,84 ,85 ,89 ,97 ,100 ,112 ,113 ,114 ,115 ,124 ,127 ,131 ,133 ,145 ,146)).iterator()
+        val iterator = mBirdlist!!.slice(setOf(17,10 ,13 ,14 ,15 ,18 ,24 ,25 ,28 ,29 ,33 ,35 ,39 ,42 ,43 ,45 ,46 ,47 ,48 ,65 ,73 ,74 ,75 ,79 ,80 ,84 ,87 ,88 ,91 ,94)).iterator()
         while (iterator.hasNext()) {
             val i = iterator.next()
             mlist.add(i)
         }
-        val questionsSetter = QuizSetter(this, binding!!, mlist,mCurrentposition,answer)
+        val questionsSetter = QuizSetter(this, binding!!, mlist,mCurrentposition,answer,mediaplayer)
         QuizSetter.instance = questionsSetter
         questionsSetter.setQuestion()
 
@@ -93,7 +94,6 @@ class QuizPractice : AppCompatActivity() {
                 return false
             }
         })
-
     }
     private fun initActionBar() {
         val actionbar = supportActionBar
@@ -113,8 +113,8 @@ class QuizPractice : AppCompatActivity() {
     private fun setupOnBackPressedCallback() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                finish()
-                QuizSetter.instance = null
+                QuizSetter.instance?.dismissQuiz()
+
             }
         })
     }

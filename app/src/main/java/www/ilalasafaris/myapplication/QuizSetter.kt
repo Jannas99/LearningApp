@@ -5,9 +5,9 @@ import android.annotation.SuppressLint
 import android.app.AlertDialog
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
-import android.media.MediaPlayer
 import android.util.Log
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
@@ -21,12 +21,12 @@ class QuizSetter(
     private val mlist: MutableList<Birds>,
     private var mCurrentposition: Int,
     private var answer:String,
+    var mediaPlayer: MyMediaPlayer? = null
 
 ) : ComponentActivity() {
-    private var mediaPlayer: MediaPlayer? = null
-    private lateinit var correctAnswer:String
-    var points = 0
 
+    private lateinit var correctAnswer:String
+    private var points = 0
 
     companion object {
         @SuppressLint("StaticFieldLeak")
@@ -34,14 +34,14 @@ class QuizSetter(
     }
 
     fun setQuestion() {
+
         val count = mlist.count()
         binding.progress.max = count
         val sb = StringBuilder()
         sb.append("$mCurrentposition / ")
         sb.append(binding.progress.max)
         binding.txtprogress.text = sb.toString()
-        Log.e("points", "Points1: $sb")
-        Log.e("points", "count: $sb")
+        Log.e("BirdIdValue3", "answer: $answer")
 
         val question: Birds = mlist[mCurrentposition - 1]
         val pictures1 = question.picture1
@@ -62,7 +62,7 @@ class QuizSetter(
         correctAnswer = question.name
 
         Log.e("BirdIdValue1", "correctAnswer: $correctAnswer")
-        Log.e("BirdIdValue2", "answer1: $points")
+        Log.e("BirdIdValue2", "points: $points")
 
         binding.apply {
             picture.setOnClickListener {
@@ -70,7 +70,12 @@ class QuizSetter(
                 picture.setImageResource(R.drawable.zzz_ic_photo_on)
             }
 
+            birdCallsexamples(sound,sound2,question.sound)
+
             binding.next.setOnClickListener {
+                // replace the bottom line wit the following to make the app force you to select a name before you can click the next button
+                //  if (mCurrentposition != mlist.size && answer.isNotEmpty()) {
+
                 if (mCurrentposition != mlist.size) {
                     mCurrentposition++
 
@@ -86,7 +91,7 @@ class QuizSetter(
                     binding.rvChoose.visibility = View.GONE
                     txtprogresscolourflash()
                     setQuestion()
-                    stopCall()
+                    mediaPlayer!!.stopResource()
 
                     binding.apply {
                         imageview.setImageResource(R.drawable.zzz_vraagremovedbackground)
@@ -95,53 +100,17 @@ class QuizSetter(
                     }
                 } else if (answer.isEmpty()) {
                     Toast.makeText(activity, "Please select an answer", Toast.LENGTH_SHORT).show()
-
                 } else
                     showCustomDialog(count,points)
             }
-            fun startCall() {
-                sound.setOnClickListener {
-                    mediaPlayer = MediaPlayer.create(activity, question.sound)
-                    mediaPlayer?.start()
-                    sound.setImageResource(R.drawable.zzz_ic_volume_off)
-                    finishcall()
-                    sound.setOnClickListener {
-                        mediaPlayer?.stop()
-                        mediaPlayer?.reset()
-                        mediaPlayer?.release()
-                        mediaPlayer = null
-                        sound.setImageResource(R.drawable.zzz_ic_play)
-                        setQuestion()
-                    }
-                }
-            }
-            startCall()
+
+            mlist.shuffle()
+            mlist.distinct()
+
         }
     }
     fun setAnswer(answer: String) {
         this.answer = answer
-        setQuestion()
-    }
-    private fun finishcall() {
-        mediaPlayer?.setOnCompletionListener {
-            mediaPlayer?.reset()
-            mediaPlayer?.release()
-            mediaPlayer = null
-            setQuestion()
-            binding.sound.setImageResource(R.drawable.zzz_ic_play)
-        }
-    }
-    fun onBack() {
-        stopCall()
-        activity.finish()
-        instance = null
-    }
-    private fun stopCall() {
-        mediaPlayer?.stop()
-        mediaPlayer?.reset()
-        mediaPlayer?.release()
-        mediaPlayer = null
-        binding.sound.setImageResource(R.drawable.zzz_ic_play)
     }
     fun txtprogresscolourflash(){
         val defaultColor = Color.parseColor("#FFFFFF")
@@ -154,29 +123,80 @@ class QuizSetter(
         }
         animator.start()
     }
-
     fun showCustomDialog(total: Int, points: Int) {
+
         val dialogBuilder = AlertDialog.Builder(activity)
         val inflater = activity.layoutInflater
         val binding = QuizResultsDialogBinding.inflate(inflater, null, false)
+        val displayMessage: String
+
         dialogBuilder.setView(binding.root)
+        dialogBuilder.setCancelable(false)
 
         binding.total.text = total.toString()
         binding.points.text = points.toString()
-        val precentage = (points.toFloat() / total.toFloat() * 100).toInt()
-        binding.percent.text = precentage.toString()
+        val percentage = (points.toFloat() / total.toFloat() * 100).toInt()
+        binding.percent.text = percentage.toString()
+
+        displayMessage = percentageMessage(percentage)
+        binding.textView7.text = displayMessage
 
         val alertDialog = dialogBuilder.create()
-
         binding.exit.setOnClickListener {
-            onBack()
+            activity.finish()
+            instance = null
             alertDialog.dismiss()
+            mediaPlayer?.onBack()
         }
         alertDialog.show()
     }
-    fun pointCounter() {
-            points += 1 // increment points
-            Log.e("points", "Points: $points")
+    fun percentageMessage(percent: Int): String {
+        return when (percent) {
+            100 -> "EXCELLENT!"
+            in 90..99 -> "Great Job!"
+            in 80..89 -> "Well done!"
+            in 75..79 -> "Its not great, but its a pass"
+            in 70..74 -> "75% is the pass Mark. YOU FAIL"
+            in 60..69 -> "The more you study the less you suck"
+            in 50..59 -> "You should rather use your phone for Instagram or Facebook."
+            in 30..49 -> "In the age of information, ignorance is a choice"
+            in 1..29 -> "Maybe you should rethink your life choices?"
+            0 -> "Maybe you should get another Hobby, Yea ?"
+            else -> ""
         }
+    }
+    fun pointCounter() {
+        points += 1 // increment points
+    }
+    fun dismissQuiz(){
+        val builder = AlertDialog.Builder(activity)
+        builder.setMessage("Are yo sure you want to Quit")
+        builder.setPositiveButton("Yes") { dialog, _ ->
+            instance = null
+            dialog.dismiss()
+            activity.finish()
+            mediaPlayer?.onBack()
+        }
+        builder.setNegativeButton("No") { dialog, _ ->
+            dialog.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
+    }
+
+    fun birdCallsexamples(playbtn: ImageView, stopbtn: ImageView, audiocall:Int ){
+        playbtn.setOnClickListener {
+            mediaPlayer!!.playResource(audiocall)
+            mediaPlayer!!.setViews(btnPlay = playbtn, btnStop = stopbtn)
+            playbtn.visibility = View.GONE
+            stopbtn.visibility = View.VISIBLE
+        }
+        stopbtn.setOnClickListener {
+            mediaPlayer!!.stopResource()
+            playbtn.visibility = View.VISIBLE
+            stopbtn.visibility = View.GONE
+        }
+    }
 }
+
 
