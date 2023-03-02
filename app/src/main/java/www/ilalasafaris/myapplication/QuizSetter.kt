@@ -24,9 +24,9 @@ class QuizSetter(
     var mediaPlayer: MyMediaPlayer? = null
 
 ) : ComponentActivity() {
-
     private lateinit var correctAnswer:String
     private var points = 0
+    private val randomList: MutableList<Birds> = mutableListOf()
 
     companion object {
         @SuppressLint("StaticFieldLeak")
@@ -34,16 +34,21 @@ class QuizSetter(
     }
 
     fun setQuestion() {
-
         val count = mlist.count()
+
+        if (randomList.isEmpty()) {
+            randomList.addAll(mlist.shuffled())
+        }
+
         binding.progress.max = count
         val sb = StringBuilder()
         sb.append("$mCurrentposition / ")
         sb.append(binding.progress.max)
         binding.txtprogress.text = sb.toString()
         Log.e("BirdIdValue3", "answer: $answer")
+        Log.e("BirdIdValue5", "mCurrentposition: $mCurrentposition")
 
-        val question: Birds = mlist[mCurrentposition - 1]
+        val question: Birds = randomList.removeAt(0)
         val pictures1 = question.picture1
         val pictures2 = question.picture2
         val pictures3 = question.picture3
@@ -69,20 +74,17 @@ class QuizSetter(
                 imageview.setImageResource(picBundle)
                 picture.setImageResource(R.drawable.zzz_ic_photo_on)
             }
-
             birdCallsexamples(sound,sound2,question.sound)
 
             binding.next.setOnClickListener {
                 // replace the bottom line wit the following to make the app force you to select a name before you can click the next button
                 //  if (mCurrentposition != mlist.size && answer.isNotEmpty()) {
-
                 if (mCurrentposition != mlist.size) {
                     mCurrentposition++
 
                     if (answer == correctAnswer ){
                         Toast.makeText(activity, "Correct", Toast.LENGTH_SHORT).show()
                         pointCounter()
-
                     } else {
                         Toast.makeText(activity, "Incorrect", Toast.LENGTH_SHORT).show()
                     }
@@ -103,12 +105,9 @@ class QuizSetter(
                 } else
                     showCustomDialog(count,points)
             }
-
-            mlist.shuffle()
-            mlist.distinct()
-
         }
     }
+
     fun setAnswer(answer: String) {
         this.answer = answer
     }
@@ -183,7 +182,6 @@ class QuizSetter(
         val dialog = builder.create()
         dialog.show()
     }
-
     fun birdCallsexamples(playbtn: ImageView, stopbtn: ImageView, audiocall:Int ){
         playbtn.setOnClickListener {
             mediaPlayer!!.playResource(audiocall)
