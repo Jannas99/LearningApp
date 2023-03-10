@@ -165,11 +165,11 @@ class QuizSetter(
         }
     }
     fun pointCounter() {
-        points += 1 // increment points
+        points += 1
     }
     fun dismissQuiz(){
         val builder = AlertDialog.Builder(activity)
-        builder.setMessage("Are yo sure you want to Quit")
+        builder.setMessage("Are you sure you want to Quit")
         builder.setPositiveButton("Yes") { dialog, _ ->
             instance = null
             dialog.dismiss()

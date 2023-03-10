@@ -152,6 +152,8 @@ class MainActivity : AppCompatActivity() {
     )
 }
 
+//Test
+
 //ToDo: Add on Destroy to try and reduce memory of App everytime you move between Activities
 //Todo When going into IdbirdsVisially Activity its very slow. it might be the pictures that are to big.
 //Todo Make all listviews into RecyclerViews
